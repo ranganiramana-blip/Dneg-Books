@@ -1,0 +1,8 @@
+1.http://dnet.dneg.com/display/TECH/NoMachine+Troubleshooting        Nomachine .doc
+  ping 14.142.196.89 -n 30   run this on home pc.
+2.http://dnet.dneg.com/display/TECH/Starters%2C+Leavers%2C+Transfers%2C+and+Moves#Starters,Leavers,Transfers,andMoves-Changingalogin. 
+3.http://dnet.dneg.com/x/JEqtHg    Zoom black screen issue.
+4. https://docs.google.com/spreadsheets/d/1OF1SCKqttiWj60n-thUCLfzuvTCce2JxdnQgJozv94k/edit#gid=0   Mainframe google sheet 
+5. http://dnet.dneg.com/display/TECH/linuxchk                                                       Linuxcheck help doc
+6. http://dnet.dneg.com/display/TECH/What+to+do+with+userchk+tickets                                Usercheck
+7. http://dnet.dneg.com/display/TECH/linuxchk

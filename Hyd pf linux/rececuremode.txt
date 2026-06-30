@@ -1,0 +1,9 @@
+ls -ivh /boot/initramfs-*
+
+cp -iv /boot/initramfs-3.10.0-1160.95.1.el7.x86_64.img /boot/initramfs-3.10.0-1160.95.1.el7.x86_64.img.back
+
+dracut -f /boot/initramfs-3.10.0-1160.95.1.el7.x86_64.img initramfs-3.10.0-1160.95.1.el7.x86_64
+
+dracut -f /boot/initramfs-3.10.0-1160.95.1.el7.x86_64.img 3.10.0-1160.95.1.el7.x86_64
+
+init 6

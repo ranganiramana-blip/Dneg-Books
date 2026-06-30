@@ -1,0 +1,54 @@
+sudo sysctl vm.drop_caches=3
+dnalias  sprv@redefine.co
+mcu@dneg.com  Request to Restore Depots on P4V
+sudo rdesktop mumws1901 -g
+
+TECH does not provide show access, so please consult with your show producer for access
+
+after removing the profile some times use below command
+setupdnegshell
+
+dnquata issues 
+ssh hydbatch2
+sudo /tools/SITE/etc/bin/usersetup --archive --force
+207826
+
+
+salt-call state.sls windows-desktop/ffmpeg -l info
+
+profile rename
+cd /u
+mv nsaj nsaj_old    
+
+dnalias vrra@dneg.com   group alias found
+
+
+nomachine.mum.dneg.com
+
+
+userchk Hyderabad home ownerships report
+ssh hydbatch2
+sudo usersetup --archive --force
+
+
+For Mainframe onsite tem 
+
+daspa@dneg.com  Dashrath Patil 
+ vvig@dneg.com +Vaibhav Vitthal Gadhave
+
+How to check the show access first
+sudo su - vlma  user id
+cd /jobs/AB3
+ls -l
+
+Disk Quata checking
+sudo su -
+cd /u/anth
+ncdu
+
+Firefox profile 
+Launch new terminal
+firefox -P
+
+FOR IT related 
+default terminal: mv ~/.mycshrc ~/.mycshrc_backup

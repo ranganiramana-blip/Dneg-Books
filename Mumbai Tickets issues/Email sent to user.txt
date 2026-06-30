@@ -1,0 +1,17 @@
+passwd-email resets and displays a user's new password
+
+passwd-email [-ump]
+
+    -u              The username of the user
+    -m              Send new password to user's HR 
+    -p              Send directly to the user's personal email set in Workday
+
+Examples: 
+
+  1. Display abcd's new password
+    passwd-email -u abcd
+
+  2. Email abcd's password to personal email address
+    passwd-email -u abcd -m -p
+
+sudo passwd-email -u srmo  new password sent to user

@@ -1,0 +1,1 @@
+project = TECH AND status in (Reopened, Open, Resolved, Closed, Rejected) AND Site = hyd    All tickets with resolved

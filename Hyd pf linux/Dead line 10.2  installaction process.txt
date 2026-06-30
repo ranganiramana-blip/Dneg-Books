@@ -1,0 +1,10 @@
+Step1: go to below path and install deadline clinet10
+\\hyd\tech\installers\thinkbox\DeadlineClient-10.2.0.8-windowd-x64-installer.exe
+Step2: it will say already another instance running do you wish to proceed press "YES"
+Step3: Click Next > select I accpet the agreement > Check the box "Set full read/write access for files for all users" > Next
+> Select Client and click Next > Select Direct connection > 
+Step4: Now give the Repository Directory \\hyd\tech\apps\thinkbox\DeadlineRepository10 and click Next >
+Step5: Now locate Database TLS Certificate path \\hyd\tech\apps\thinkbox\DeadlineDatabase10\certs then click on browse
+and select Deadline10Client file > Open > then enter the TLS Certificate password : p@$$w0rd
+Step6: Check the box Install Launcher As Service and provide redefine\renderman login and password > Redefine\renderman P/w Welcome@4321 Next >Next that's it.
+Installation will be done.

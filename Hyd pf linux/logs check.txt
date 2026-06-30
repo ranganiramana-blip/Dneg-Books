@@ -1,0 +1,14 @@
+journalctl -b
+journalctl -k -b
+last reboot
+journalctl -u sshd
+last -x
+last -x reboot
+last -x shutdown
+last -x|grep shutdown | head -1
+
+ last reboot | head -6
+
+
+for Windows
+1.

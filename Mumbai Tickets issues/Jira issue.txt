@@ -1,0 +1,34 @@
+http://jira/browse/TECH-674676
+
+root@natter:~# telnet localhost 25;date
+Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+Mon 27 Sep 04:15:12 BST 2021
+root@natter:~# systemctl status postfix.service
+* postfix.service - Postfix Mail Transport Agent
+   Loaded: loaded (/lib/systemd/system/postfix.service; enabled; vendor preset: enabled)
+   Active: active (exited) since Mon 2021-09-27 00:06:20 BST; 4h 9min ago
+  Process: 2177 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+ Main PID: 2177 (code=exited, status=0/SUCCESS)
+ 
+Sep 27 00:06:20 natter systemd[1]: Starting Postfix Mail Transport Agent...
+Sep 27 00:06:20 natter systemd[1]: Started Postfix Mail Transport Agent.
+root@natter:~# date;/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/ssl/check-ssl-host.rb --tls-smtp -p 25 -h natter.dneg.com
+Mon 27 Sep 04:16:20 BST 2021
+Check failed to run: Connection refused - connect(2) for "natter.dneg.com" port 25, ["/etc/sensu/plugins/ssl/check-ssl-host.rb:112:in `initialize'", "/etc/sensu/plugins/ssl/check-ssl-host.rb:112:in `open'", "/etc/sensu/plugins/ssl/check-ssl-host.rb:112:in `block in get_cert_chain'", "/opt/sensu/embedded/lib/ruby/2.4.0/timeout.rb:93:in `block in timeout'", "/opt/sensu/embedded/lib/ruby/2.4.0/timeout.rb:103:in `timeout'", "/etc/sensu/plugins/ssl/check-ssl-host.rb:111:in `get_cert_chain'", "/etc/sensu/plugins/ssl/check-ssl-host.rb:192:in `run'", "/opt/sensu/embedded/lib/ruby/gems/2.4.0/gems/sensu-plugin-2.0.2/lib/sensu-plugin/cli.rb:58:in `block in <class:CLI>'"]
+root@natter:~# systemctl status postfix.service
+* postfix.service - Postfix Mail Transport Agent
+   Loaded: loaded (/lib/systemd/system/postfix.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Mon 2021-09-27 04:16:35 BST; 6s ago
+  Process: 2177 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+ Main PID: 2177 (code=exited, status=0/SUCCESS)
+ 
+Sep 27 00:06:20 natter systemd[1]: Starting Postfix Mail Transport Agent...
+Sep 27 00:06:20 natter systemd[1]: Started Postfix Mail Transport Agent.
+Sep 27 04:16:35 natter systemd[1]: Stopped Postfix Mail Transport Agent.
+root@natter:~# systemctl start postfix.service
+root@natter:~# date;/opt/sensu/embedded/bin/ruby /etc/sensu/plugins/ssl/check-ssl-host.rb --tls-smtp -p 25 -h natter.dneg.com
+Mon 27 Sep 04:16:57 BST 2021
+check_ssl_host OK: natter.dneg.com - 176 days until expiry
+root@natter:~# /opt/sensu/embedded/bin/ruby /etc/sensu/plugins/ssl/check-ssl-host.rb --tls-smtp -p 25 -h natter.dneg.com
+check_ssl_host OK: natter.dneg.com - 176 days until expiry

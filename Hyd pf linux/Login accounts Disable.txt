@@ -1,0 +1,9 @@
+cd /etc/dconf/db/gdm.d/
+vim 00-login-screen
+
+[org/gnome/login-screen]
+# Do not show the user list
+disable-user-list=true
+
+:wq! save to this file
+dconf update

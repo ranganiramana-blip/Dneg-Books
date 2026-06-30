@@ -1,0 +1,20 @@
+cd /usr/lib64
+yum install pulseaudio-module-x11 -y
+ln -s libpython2.7.so.1.0 libpython2.6.so.1.0
+ln -s libIlmImf.so.7.0.0 libIlmImf.so.6
+yum install audiofile audiofile-devel -y
+service nxserver.service restart
+
+
+cd /home/
+  cd satish.bolke/
+  cat lib_libaudio.sh
+  yum install audiofile audiofile-devel -y
+  cat lib_libaudio.sh
+  cat lib_libaudio.sh.old
+  yum install pulseaudio-module-x11 -y
+  service nxserver.service restart
+
+67.49
+
+shutdown -h

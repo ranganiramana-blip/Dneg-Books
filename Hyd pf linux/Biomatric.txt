@@ -1,0 +1,22 @@
+Please find the below process to fix the PIN or Biometric option not working issue in windows laptops.
+
+Option1:
+Go to run and type gpedit.msc
+Navigate to below path:
+Computer Configuration > Administrative Templates > Windows Components > Biometrics and click on Enable for below all options
+Allow the use of biometrics
+Allow users to log on using biometrics
+Allow domain users to log on using biometrics
+Specify timeout for fast user switching events
+
+
+Option2:
+Go to run and type regedit and take backup of registry editor before doing any changes
+After that navigate to below path and create the new DWORD32 value as mentioned below
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System
+
+go to the above location and create a DWORD32 bit value and type below line
+
+AllowDomainPINLogon  and provide the value 1 
+
+NOTE: Above AllowDomainPINLogon command is case sensitive

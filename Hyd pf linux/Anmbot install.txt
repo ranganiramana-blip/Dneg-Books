@@ -1,0 +1,14 @@
+Animbot install
+_____
+login in host with user credentials
+go to https://animbot.ca/home/
+download trail version
+it is Zip file, go to downloads and unzip file.
+copy animbot folder to \usr name\maya\scripts
+open maya
+animBot is to drag the file animBot Drag'n Drop Install.mel into Maya's viewport:
+
+click on ML at the bottom in maya, it will convert to python
+ run this python code:
+
+import animBot; animBot.welcome()

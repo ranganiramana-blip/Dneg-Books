@@ -1,0 +1,51 @@
+take ssh
+
+puppet agent -t
+
+reboot
+
+r0yalp@lmr00tl0g1n
+
+vi /etc/modprobe.d/blacklist-nouveau.conf
+blacklist nouveau
+options nouveau modeset=0
+
+grubby --update-kernel=ALL --args="rd.driver.blacklist=nouveau nouveau.modeset=0"
+
+ln -sf /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/libGL.so.1
+
+
+
+yum -y install dkms
+cd /usr/lib64/
+yum -y install /usr/lib64/ freeglut-devel libX11-devel libXi-devel libXmu-devel  make mesa-libGLU-devel freeimage-devel
+yum -y install kernel-devel epel-release dkms kernel source kernel-headers libglvnd development
+ 
+reboot
+init 5
+init 3
+cd /jobs/TEMP/test/2u/
+./NVIDIA-Linux-x86_64-460.80.run   (Quadro rtx 4000)
+init 6
+   
+
+Go to bios and change diplay setting
+
+after boot Graphical mode.
+
+cd /jobs/TEMP/test/2u/
+rpm -ivh nomachine_6.11.2_1_x86_64.rpm
+
+   
+cd /jobs/TEMP/test/2u/
+scp -r XnView /usr/local/
+cd /usr/local/XnView
+cp -r XnView.desktop /usr/share/applications/
+
+
+
+
+
+   
+   
+

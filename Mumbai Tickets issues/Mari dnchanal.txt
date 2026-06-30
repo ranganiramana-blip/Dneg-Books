@@ -1,0 +1,4 @@
+Navigate to the menu DNEG > add dnChannel or right-click in your channels palette to access the same menu.
+In the UI that appears, select your desired maps you wish to create. You can shift or control click for multiple selection
+Specify the resolution of the maps you wish to create
+Click OK

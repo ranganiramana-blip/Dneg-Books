@@ -1,0 +1,67 @@
+67.5    Pinging         Done
+67.117  IP wrong 67.217 Windows
+67.129  IP wrong 68.83  Done
+68.98   IP wrong 67.98  Done
+67.55   Pinging         Windows
+67.115  IP wrong 67.215 Windows
+67.132  IP wrong 67.198 Windows
+67.95   IP wrong 67.97  Done
+
+
+
+env | grep -i proxy
+
+cd /etc/profile.d/
+ls
+
+ scp 10.1.69.113:/etc/profile.d/proxy.sh /etc/profile.d/
+
+cd /etc/pki/ca-trust/source/anchors
+
+hyd-mcr-012.crt
+
+scp 10.1.69.113:/etc/pki/ca-trust/source/anchors/hyd-mcr-012.crt /etc/pki/ca-trust/source/anchors
+scp 10.1.67.126:/etc/pki/ca-trust/source/anchors/hydproxy.crt /etc/pki/ca-trust/source/anchors
+
+chmod -R 777 /etc/pki/ca-trust/source/anchors
+
+
+sed '/^Exec/s/$/ --proxy-server="10.1.69.12:3128"/' /usr/share/applications/google-chrome.desktop  -i
+
+For firefox
+
+cd /usr/share/applications/
+cp firefox.desktop firefox.desktop.orig  (to take backup of firefox file)
+then run below command
+sed '/^Exec/s/$/ --proxy-server="10.1.69.12:3128"/' /usr/share/applications/google-chrome.desktop -i
+sed '/^Exec/s/$/ --proxy-server="10.1.69.12:3128"/' /usr/share/applications/firefox.desktop -i
+
+
+cd /apps/sreelinux/proxy/
+cp proxy.sh /etc/profile.d/
+ cp hyd-mcr-012.crt /etc/pki/ca-trust/source/anchors/
+chmod -R 777 /etc/pki/ca-trust/source/anchors
+update-ca-trust
+systemctl daemon-reload
+
+cd /etc/pki/ca-trust/source/anchors/
+ cat /usr/share/applications/google-chrome.desktop
+ cat /usr/share/applications/firefox.desktop
+ update-ca-trust
+systemctl daemon-reload
+env | grep -i proxy
+./unset.sh
+unset.sh
+rm -rvf policies
+
+cd /etc/firefox/
+polacis
+
+vi policies.json
+
+env | grep -i proxy
+   unset NO_PROXY http_proxy ftp_proxy FTP_PROXY HTTPS_PROXY https_proxy no_proxy HTTP_PROXY
+
+
+
+

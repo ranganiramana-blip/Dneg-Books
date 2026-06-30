@@ -1,0 +1,25 @@
+1.Render issues
++adding
+
+Ganesh Avhad / Amit Lad / Roshan Tandale / Kamalakar Warkhandkar
+Roshan Tandale / Amey Ghagare
+
+2. Googlle Authenticator reset for Zimbra
+    ++ Vasant Palav / Darshana Soni
+3.
+Lokesh mishra \adutt@redefine.co
+
+
+
+Shotgun issues
+
+Sushant Vijay Yadav / Suhas Ashok Pangam / Amit Naik please look into this 
+
+
+Please find the below steps to login into Beehive portal:
+ 
+Step 1 : Click on the link -  https://primefocus.beehivehcm.com
+Step 2 : Click on Forgot password option
+Step 3 : Enter your username (Employee ID). 
+Step 4 : Click on send me option, to receive the OTP
+Step 5 : OTP will be received on your official mail id, kindly enter the OTP received and reset your password.

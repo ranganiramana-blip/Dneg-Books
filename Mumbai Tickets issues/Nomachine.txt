@@ -1,0 +1,49 @@
+For remote sharing issue
+
+sudo yum remove nomachine
+cd /usr
+sudo ncdu
+select nx folder and fress d click yes
+cd /
+cd /etc
+sudo ncdu
+select nx folder and fress d click yes
+
+sudo /usr/NX/bin/nxserver --status
+salt-highstate
+sudo ncdu
+
+for black screen issue follow this steps
+ cd //usr/NX/bin
+/usr/NX/bin sudo ./nxserver --list
+sudo ./nxserver --kill 1199 ex kill the session which is in idle
+
+Kill Sessions / Black Screen Nomachine Login
+run this command to check the current sessions:
+
+
+
+ssh mumnomachine2 
+cd /usr/NX/bin
+sudo ./nxserver --list
+
+./nxserver --kill 1012
+
+/usr/NX/bin sudo ./nxserver --list  | grep hrpa
+/usr/NX/bin sudo ./nxserver --terminate hrpa
+
+NX> 127 Available sessions:
+
+Display Username Remote IP   Session ID                       Node           
+------- -------- ----------- -------------------------------- --------------
+1009    bnc      -           4B1B5993D84245462F7C81A3AFD04185 localhost:4000
+1004    daire    -           746BAF04EEC4B35AAD8EBCB055F21466 localhost:4000
+1016    slew     -           4AFE8B7E844D43BD3EDEE2C3D9B7DD9E localhost:4000
+1015    deng      10.23.40.18 9A8CEDE23C8B2DB255CDC9AA11F6C171 localhost:4000
+1012    deng      -           596AD49CAD98F533D758DF6F018D75C9 localhost:4000
+
+
+And then kill the ones that are redundant or idle.. using the display / session ID / username.
+
+nomachine2 /usr/NX/bin # ./nxserver --kill 1012
+NX> 900 Forcing shutdown of session id: 596AD49CAD98F533D758DF6F018D75C9 for user: deng

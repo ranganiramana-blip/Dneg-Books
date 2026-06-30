@@ -1,0 +1,3 @@
+1. vim /usr/bin/google-chrome
+2. last line replace this 
+exec -a "$0" "$HERE/chrome" "$@" --no-sandbox

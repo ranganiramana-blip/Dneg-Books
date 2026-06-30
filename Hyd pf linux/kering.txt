@@ -1,0 +1,9 @@
+
+Please try to login with your machine password.
+
+Still facing the same issue please follow the below instructions.
+
+We have placed a script for the keyring reset, by which users can reset the keyring by themself without IT help, Please find the script in below path and let us know for any issues.
+
+cd /apps/keyring/
+and run ./keyringreset.sh

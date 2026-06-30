@@ -1,0 +1,18 @@
+
+
+
+As per your request, password has been reseted,password shared to HR team, Team will be shared to you. once receive the password let me know.
+
+
+
+
+
+    Please run a ping test from your local machine to your DNEG workstation
+
+    Go to Start --> Search for "Command Prompt" --> Open it. Then type the below.
+
+    ping -n 30 mumws
+
+    Share the ping output
+
+   Perform internet speed test on browser of your home computer by visiting https://speed.measurementlab.net Send a screenshot of internet speed test too.

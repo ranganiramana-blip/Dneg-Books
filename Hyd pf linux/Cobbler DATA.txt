@@ -1,0 +1,192 @@
+ot-enabled=yes --hostname=hyd-mcr-130 --gateway=10.1.64.250 --mac-address=10:c3:                                                                                                                                                             7b:e6:cf:8f --ip-address=10.1.69.130  --static=yes --netmask=255.255.248.0 --int                                                                                                                                                             erface=eth0
+  796  rm -rvf /var/lib/dhcpd/dhcpd.leases~
+  797  > dhcpd.leases
+  798  /etc/init.d/dhcpd restart
+  799  cd /home/
+  800  ./new_user mahendhar.bakka
+  801  cd /home/
+  802  ./new_user venu.nemani
+  803  ./new_user kalyan.talla
+  804  ./new_user bhaskar.deverakonda
+  805  ./new_user gangaraju.d
+  806  ./new_user anirudh.behara
+  807  ./new_user bandana.panigrahi
+  808  ./new_user krishna.cherukuri
+  809  ./new_user raviteja.sagiri
+  810  ./new_user ismail.sk
+  811  ./new_user jaiudaya.kumar
+  812  ./new_user karthik.aratipamula
+  813  ./new_user prudhvi.angerikula
+  814  ./new_user srinivas.vakalapudi
+  815  ./new_user james.c
+  816  ./new_user krishnakanth.r
+  817  ./new_user vinod.thunga
+  818  ./new_user himaja.chakrala
+  819  ./new_user srikanth.yellanki
+  820  ./new_user abhishek.d
+  821  ./new_user
+  822  ./new_user kranthi.katikaneni
+  823  ./new_user mahesh.dhuvanthula
+  824  ./new_user meghana.r
+  825  ./new_user sanjukta.bhera
+  826  ./new_user vijay.yemula
+  827  ./new_user kiran.gandla
+  828  ./new_user  yashwanth.kandepu
+  829  ./new_user  varaprasad.kota
+  830  ./new_user  sivaprasad.v
+  831  ./new_user  ramakrushnudu.b
+  832  ./new_user  saurav.sengupta
+  833  ./new_user  srinivasulu.g
+  834  ./new_user vijita.singh
+  835  ./new_user venkateesh.v
+  836  ./new_user arvind.bhavana
+  837  cd /home/
+  838  ./new_user satyanarayana.k
+  839  ls -l
+  840  rm -rvf satyanarayana.k/
+  841  history
+  842  ./new_user sampathkumar.m
+  843  rm -rvf sampathkumar.m/
+  844  ./new_user sampathkumar.m
+  845  ./new_user dudekulaadam.th/
+  846  rm -rvf dudekulaadam.th/
+  847  ./new_user dudekulaadam.th/
+  848  cd /home/
+  849  rm -rvf lakshman.m
+  850  ./new_user lakshman.m
+  851  cobbler system remove --name=hyd-f3-015
+  852    puppet cert clean hyd-f3-015.redefine.co
+  853  puppet cert clean hyd-f3-015.redefine.co
+  854  puppet cert clean hyd-f3-015
+  855  cobbler system add --name=hyd-f3-015 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f3-015 --gateway=10.1.64.250 --mac-address=48:0f:cf                                                                                                                                                             :4d:9b:3c --ip-address=10.1.67.15  --static=yes --netmask=255.255.248.0 --interf                                                                                                                                                             ace=eth0
+  856  cobbler system add --name=hyd-f1-018 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f1-018 --gateway=10.1.64.250 --mac-address=2c:27:d7                                                                                                                                                             :3b:fc:45 --ip-address=10.1.65.18  --static=yes --netmask=255.255.248.0 --interf                                                                                                                                                             ace=eth0
+  857  cobbler system remove --name=hyd-f1-018
+  858  cd /home/
+  859  rm -rvf kireeti.nallaginnela/
+  860  ./new_user kireeti.nallaginnela/
+  861  cobbler system add --name=hyd-f1-018 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f1-018 --gateway=10.1.64.250 --mac-address=2c:27:d7                                                                                                                                                             :3b:fc:45 --ip-address=10.1.65.18  --static=yes --netmask=255.255.248.0 --interf                                                                                                                                                             ace=eth0
+  862  ls -l
+  863  ./new_user prasad.sambhu
+  864  cd /home/
+  865  ./new_user prasad.sambhu
+  866  ./new_user vishwa.yerramsetty
+  867  rm -rvf vishwa.yerramsetty
+  868  ./new_user vishwa.yerramsetty
+  869  ./new_user balakrishna.dilli
+  870  rm -rvf balakrishna.dilli
+  871  ./new_user balakrishna.dilli
+  872  ./new_user gangasagar.gubbala
+  873  rm -rvf gangasagar.gubbala
+  874  ./new_user gangasagar.gubbala
+  875  ./new_user mahender.koduri
+  876  history
+  877  cd /home/
+  878  ./new_user umesh.thakre
+  879  rm -rvf umesh.thakre
+  880  ./new_user umesh.thakre
+  881  puppet cert clean hyd-f3-015.redefine.co
+  882  ./new_user sanjukta.behera
+  883  ./new_user krishna.vanaparthi
+  884  cobbler system remove --name=hyd-f3-003
+  885  cobbler system remove --name=hyd-f4-015
+  886  cobbler system remove --name=hyd-f4-073
+  887  cobbler system add --name=hyd-f3-003 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f3-003 --gateway=10.1.64.250 --mac-address=48:0f:cf                                                                                                                                                             :4d:9a:c4 --ip-address=10.1.67.3  --static=yes --netmask=255.255.248.0 --interfa                                                                                                                                                             ce=eth0 --ip-address=10.1.67.3  --static=yes --netmask=255.255.248.0 --interface                                                                                                                                                             =eth0
+  888  cobbler system add --name=hyd-f4-073 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f4-073 --gateway=10.1.64.250 --mac-address=a0:d3:c1                                                                                                                                                             :20:ce:2e --ip-address=10.1.68.73  --static=yes --netmask=255.255.248.0 --interf                                                                                                                                                             ace=eth0
+  889  cobbler system remove --name=hyd-f3-003
+  890  cobbler system add --name=hyd-f3-003 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f3-003 --gateway=10.1.64.250 --mac-address=48:0f:cf                                                                                                                                                             :4d:9a:c4 --ip-address=10.1.67.3  --static=yes --netmask=255.255.248.0 --interfa                                                                                                                                                             ce=eth0
+  891  ./new_user vanaparthi.krishna
+  892  .
+  893  puppet cert clean hyd-f4-073.redefine.co
+  894  cd /home/
+  895  ./new_user venkat.meruboina
+  896  rm -rvf prasad.sambhu
+  897  ./new_user prasad.sambhu
+  898  ./new_user ali.maula
+  899  ./new_user manojkumar.rauta
+  900  ./new_user prasad.sambhu
+  901  ./new_user sujith.subramanian
+  902  rm -rvf sujith.subramanian
+  903  ./new_user sujith.subramanian
+  904  cd /home/
+  905  ./new_user mahender.koduri/
+  906  ./new_user ramaraju
+  907  rm rvf ramaraju
+  908  rm -rvf ramaraju
+  909  ./new_user ramaraju
+  910  ./new_user vanaparthi.krishna/
+  911  rm -rvf vanaparthi.krishna/
+  912  ./new_user vanaparthi.krishna/
+  913  rm -rvf onkar.maggirwar
+  914  ./new_user onkar.maggirwar
+  915  rm -rvf sridhar.nadigadda
+  916  ./new_user sridhar.nadigadda
+  917  rm -rvf sridhar.nadigadda
+  918  ./new_user sridhar.nadigadda
+  919  rm -rvf sridhar.nadigadda
+  920  ./new_user sridhar.nadigadda
+  921  rm -rvf sridhar.nadigadda
+  922  ./new_user sridhar.nadigadda
+  923  cd /home/
+  924  ./new_user satya.kakileti
+  925  rm -rvf naveen.katragadda
+  926  ./new_user naveen.katragadda
+  927  cd /home/
+  928  ./new_user surajit.barman
+  929  rm -rvf sridhar.nadigadda/
+  930  ./new_user sridhar.nadigadda
+  931  ./new_user junaidrahim.parmar
+  932  ./new_user junaidrahim.pa
+  933  ./new_user prajwalprakash.patil
+  934  ./new_user aquibbin.asifuddin
+  935  ./new_user johnbenedict.nadar
+  936  ./new_user amit.nerurkar
+  937  ./new_user manikumar.mandapaka
+  938  rm -rvf vijayakumar.gokada/
+  939  ./new_user vijaykumar.gokada
+  940  ./new_user asit.mondal
+  941   pdsh -f 1 -w 'hyd-f4-[072-073]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  942  ping 10.1.68.73
+  943   pdsh -f 1 -w 'Hyd-F4-[073]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  944  pwd
+  945  cd /jobs/
+  946  ll
+  947  cd share/
+  948  ll
+  949  ping 10.1.67.77
+  950  cd /jobs/
+  951  ll
+  952  cd /home/satish.bolke/
+  953  ll
+  954   pdsh -f 1 -w 'hyd-mcr-[129]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  955  cd /etc/init.d/
+  956  history
+  957  cd /var/lib/dhcpd/d
+  958  cd /var/lib/dhcpd/
+  959  cat /var/lib/dhcpd/dhcpd.leases~
+  960  rm /var/lib/dhcpd/dhcpd.leases~
+  961  >dhcpd.leases
+  962  /etc/init.d/dhcpd restart
+  963  cobbler system remove --name=hyd-f1-test
+  964  puppet cert clean hyd-f1-test.redefine.co
+  965  puppet cert clean hyd-f1-151.redefine.co
+  966  puppet cert clean hyd-f1-test.redefine.co
+  967  cobbler system remove --name=hyd-f1-test
+  968  cobbler system remove --name=hyd-f1-151
+  969  cobbler system edit --name=hyd-f1-151 --profile=el6_renderbox --netboot-e                                                                                                                                                             nabled=yes --hostname=hyd-f1-151 --gateway=10.1.64.250 --mac-address=48:0f:cf:4d                                                                                                                                                             :9b:b3 --ip-address=10.1.64.151  --static=yes --netmask=255.255.248.0 --interfac                                                                                                                                                             e=eth0
+  970  cobbler system add --name=hyd-f1-151 --profile=el6_renderbox --netboot-en                                                                                                                                                             abled=yes --hostname=hyd-f1-151 --gateway=10.1.64.250 --mac-address=48:0f:cf:4d:                                                                                                                                                             9b:b3 --ip-address=10.1.64.151  --static=yes --netmask=255.255.248.0 --interface                                                                                                                                                             =eth0
+  971  cobbler system remove --name=hyd-f1-151
+  972  cobbler system add --name=hyd-f1-151 --profile=el7.4_workstation --netboo                                                                                                                                                             t-enabled=yes --hostname=hyd-f1-151 --gateway=10.1.64.250 --mac-address=48:0f:cf                                                                                                                                                             :4d:9b:b3 --ip-address=10.1.64.151  --static=yes --netmask=255.255.248.0 --inter                                                                                                                                                             face=eth0
+  973  cd /jobs/jsre/seqs/
+  974  ll
+  975  cd ..
+  976  ll
+  977  cd /home
+  978  cd /home/satish.bolke/
+  979  ll
+  980   pdsh -f 1 -w 'hyd-f4-[096-100]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  981   pdsh -f 1 -w 'hyd-f3-[001-035]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  982  ll
+  983  vi lib_libaudio.sh
+  984   pdsh -f 1 -w 'hyd-f4-[001-100]','hyd-f3-[001-110]' 'sh /home/satish.bolk                                                                                                                                                             e/lib_libaudio.sh'
+  985   pdsh -f 1 -w 'Hyd-F4-[073]' 'sh /home/satish.bolke/lib_libaudio.sh'
+  986  history

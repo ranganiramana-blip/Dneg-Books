@@ -1,0 +1,10 @@
+
+cobbler system add --name=hyd-f1-037 --profile=el7.4_workstation --netboot-enabled=yes --hostname=hyd-f1-037 --gateway=10.1.64.250 --mac-address=14:dd:a9:d3:d0:9d --ip-address=10.1.70.37  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+cobbler system add --name=hyd-rnd-037 --profile=el6_renderbox --netboot-enabled=yes --hostname=hyd-rnd-037 --gateway=10.1.64.250 --mac-address=14:dd:a9:d3:d0:9d --ip-address=10.1.70.37  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+
+
+
+10.1.64.13  Cobbler  r0yal
+10.1.64.5 AD   un1

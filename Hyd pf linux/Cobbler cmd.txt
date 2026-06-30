@@ -1,0 +1,25 @@
+             Old image cmd
+cobbler system add --name=hyd-f1-037 --profile=el7.4_workstation --netboot-enabled=yes --hostname=hyd-f1-037 --gateway=10.1.64.250 --mac-address=14:dd:a9:d3:d0:9d --ip-address=10.1.70.37  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+cobbler system add --name=hyd-rnd-037 --profile=el6_renderbox --netboot-enabled=yes --hostname=hyd-rnd-037 --gateway=10.1.64.250 --mac-address=14:dd:a9:d3:d0:9d --ip-address=10.1.70.37  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+
+Cobbler new image cmd:
+
+cobbler system add --name=hyd-f4-069 --profile=EL7.9-x86_64 --netboot-enabled=yes --hostname=hyd-f4-069 --gateway=10.1.64.250 --mac-address=64:51:06:4b:4c:31 --ip-address=10.1.68.69  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+
+10.1.64.13  Cobbler  r0yal
+10.1.64.5 AD   un1
+
+
+
+
+
+
+
+
+
+
+
+

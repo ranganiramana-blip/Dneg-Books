@@ -1,0 +1,8 @@
+apot@virar /u/apot sudo usersetup --retire --username nhba
+[2022-07-25 13:30:20,707] Usersetup started
+[2022-07-25 13:35:35,770] Usersetup mode: RETIRE
+[2022-07-25 13:35:36,524] Retiring user nhba [Nimmagadda Hari Babu]
+[2022-07-25 13:35:37,486] Response Code (PUT): 204
+[2022-07-25 13:35:40,894] Successfully retired user nhba [Nimmagadda Hari Babu]
+[2022-07-25 13:35:41,061] nhba has a active VPN, revoking QR code
+[2022-07-25 13:35:41,061] http://openvpn-master:8080/revoke?id=nhba

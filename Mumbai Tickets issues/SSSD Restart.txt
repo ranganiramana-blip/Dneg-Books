@@ -1,0 +1,4 @@
+service sssd status
+sudo systemctl status sssd.service
+sudo service sssd start
+sudo systemctl start sssd.service

@@ -1,0 +1,68 @@
+
+vi /etc/puppet/puppet.conf
+
+puppet agent -t
+
+reboot
+
+
+
+        
+vi /etc/modprobe.d/blacklist-nouveau.conf
+blacklist nouveau
+options nouveau modeset=0
+
+grubby --update-kernel=ALL --args="rd.driver.blacklist=nouveau nouveau.modeset=0"
+
+killing lightdm and running the .run file, it says, "WARNING: Unable to determine the path
+
+ln -sf /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/libGL.so.1
+
+
+
+ 
+   60  yum install dkms
+   62  cd /usr/lib64/
+   63  ls -ll
+   64  yum install freeglut-devel libX11-devel libXi-devel libXmu-devel  make mesa-libGLU-devel freeimage-devel
+   66  yum install kernel-devel
+   67  yum -y install epel-release
+   68  yum -y install dkms
+   48  yum install kernel source
+   50  yum install kernel-headers
+   53  yum install libglvnd development
+   reboot
+   init 3
+   cd /jobs/test/2u/
+   ./NVIDIA-Linux-x86_64-460.80.run   (Quadro rtx 4000)
+   init 6
+   
+
+   Go to bios and change diplay setting
+
+   after boot Graphical mode.
+
+   cd /jobs/test/2u/
+   rpm -ivh nomachine_6.11.2_1_x86_64.rpm
+
+   
+   cd /jobs/test/2u/
+   scp -r XnView /usr/local/
+   cp -r XnView.desktop /usr/share/applications/
+
+
+
+google-chrome-stable_current_x86_64.rpm
+google-chrome-stable_current_x86_64.rpm.1
+rpm -ivh liberation-fonts-1.07.2-16.el7.noarch.rpm liberation-fonts-common-1.07.2-16.el7.noarch.rpm liberation-mono-fonts-1.07.2-16.el7.noarch.rpm liberation-narrow-fonts-1.07.2-16.el7.noarch.rpm liberation-sans-fonts-1.07.2-16.el7.noarch.rpm liberation-serif-fonts-1.07.2-16.el7.noarch.rpm
+   
+
+   mcr-024
+   mcr-082
+   mcr-111
+   mcr-121
+   mcr-130
+   mcr-132
+   
+   
+

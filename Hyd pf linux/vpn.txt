@@ -1,0 +1,16 @@
+Dear Team,
+
+As we have upgraded our network as a result there is a change to VPN settings, The new VPN IP address is https://125.18.45.49:943/
+
+Action Required:
+Please update your VPN client settings with the new IP address provided above. This will ensure uninterrupted access to our network services.
+
+Open any browser and use the new VPN address above and login with your existing credentials, after login download the profile file (reference image below) and import the last downloaded profile file into your VPN client (reference image below, Before importing the new profile file, delete the old profile in the VPN settings.
+Launch the OpenVPN Connect application. If you don't have one, get it from Get OpenVPN Connect.
+Click on the. icon or select Import Profile from the menu.
+Select the Upload File tab.
+Drag and Drop the . ...
+The OpenVPN Profile will show up in the Profiles list.
+
+https://125.18.45.49:943/
+Airtel WAN IP : 125.18.37.210

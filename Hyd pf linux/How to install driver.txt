@@ -1,0 +1,32 @@
+#yum Update -y
+
+$ sudo yum group install "Development Tools"
+$ sudo yum install kernel-devel
+$ sudo yum -y install epel-release
+$ sudo yum -y install dkms
+
+
+
+vi /etc/default/grub
+GRUB_CMDLINE_LINUX="crashkernel=auto rhgb quiet rd.driver.blacklist=nouveau nouveau.modeset=0"'
+
+grubby ––update-kernel=ALL ––args="rd.driver.blacklist=nouveau nouveau.modeset=0"
+mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
+echo "blacklist nouveau" > /etc/modprobe.d/nouveau-blacklist.conf 
+dracut /boot/initramfs-$(uname -r).img $(uname -r)
+
+
+sudo yum group install "Development Tools"
+$ sudo yum install kernel-devel
+$ sudo yum -y install epel-release
+$ sudo yum -y install dkms
+
+
+Extra Libraries
+
+yum install freeglut-devel libX11-devel libXi-devel libXmu-devel \
+    make mesa-libGLU-devel freeimage-devel
+
+
+
+

@@ -1,0 +1,31 @@
+/tools/SITE/etc/google/reset2fa --add --user vrro
+/tools/SITE/etc/google/reset2fa --remove --user vrro
+
+sudo /tools/SITE/etc/google/newstarteraccess --add --user pmvn
+sudo /tools/SITE/etc/google/newstarteraccess -remove --user user name
+sudo /tools/SITE/etc/google/reset2fa --add --user usrername
+
+
+Please ask to user follow the below mentioned steps Now
+
+ 
+1. Open Chrome Browser
+
+2. Type - accounts.google.com
+
+3. Once you logged in click on 9 dots in the right top corner
+
+4. Go to Accounts
+
+5. Click Security Tab
+
+6. Scroll down and click 2-Step Verification
+
+7Enter your mobile number and click NextNote : You will get code in your phone
+
+8. Enter the codeFor scanning QR code in your Google Authenticator:Scroll Down in that same page and check Authenticator App
+
+9. Click Set upCheck the phone do you have Anroid or IOS (Iphone) click on that accordinglyScan QR code in your phone Google AuthenticatorOpen Google Authenticator App in your phone- Click + sign in bottom right corner - Scan a barcodeIf you need any assistance kindly let me know
+
+
+

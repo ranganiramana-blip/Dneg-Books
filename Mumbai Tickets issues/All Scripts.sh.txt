@@ -1,0 +1,93 @@
+1. Maya installaction
+
+#!/bin/bash
+
+yum --setopt=tsflags=noscripts remove Maya* & : yum remove Maya2022_64.x86_64
+
+init 6
+
+2. Temp clear
+
+#!/bin/bash
+
+function work-list () {
+
+cd /usr/tmp
+rm -rf *
+echo 3 > /proc/sys/vm/drop_caches
+
+}
+
+work-list | zenity --progress --title "How-To Geek" --auto-close
+
+exit 0
+
+zenity --info --width 300 --text "Temp has been cleared."
+
+3. proxy removing
+
+#!/bin/bash
+
+function remove-proxy (){
+
+
+echo "# removing proxy related files"
+
+rm -rf /etc/profile.d/proxy.sh
+rm -rf /etc/profile.d/squid.sh
+
+echo "25"
+
+sleep 1
+
+echo "# removing proxy related certificates"
+
+
+rm -rf /etc/pki/ca-trust/source/anchors/hyd-mcr-012.crt
+
+echo "50"
+
+sleep 1
+
+echo "# unseting the proxy env variables"
+
+env | grep -i proxy
+unset PROXY_URL http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ftp_proxy FTP_PROX                                                                                                                                                             Y no_proxy NO_PROXY
+
+env | grep -i proxy
+
+echo "75"
+
+sleep 1
+
+
+echo "# doing neccessary changes"
+
+cp /usr/share/applications/google-chrome.desktop.orig /usr/share/applications/go                                                                                                                                                             ogle-chrome.desktop
+
+update-ca-trust
+systemctl daemon-reload
+
+echo "100"
+
+sleep 1
+
+echo "Proxy successfully removed."
+
+}
+
+remove-proxy | zenity --progress --title "How-To Geek" --auto-close
+
+
+zenity --info --width 300 --text "Proxy successfully removed."
+
+exit 0
+
+4. Wifi disable
+
+#!/bin/bash
+
+mkdir -p /root/wifidrivers/
+
+mv /lib/modules/$(uname -r)/kernel/drivers/net/wireless/ /root/wifidrivers/
+

@@ -1,0 +1,2 @@
+systemctl status peregrine_rlm.service
+lic --bokeh

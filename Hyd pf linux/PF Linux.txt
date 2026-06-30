@@ -1,0 +1,599 @@
+Download Maya and adlmapps rpm as shown below and keep it in /usr/local/src
+
+cd /usr/local/src
+rpm -ivh --force Maya2016_64-2016.0-1907.x86_64.rpm adlmapps11-11.0.15-0.x86_64.rpm 
+
+vi /usr/autodesk/maya2016/bin/License.env
+MAYA_LICENSE=unlimited
+MAYA_LICENSE_METHOD=network 
+
+cp /var/flexlm/maya/lic /usr/autodesk/maya2016/bin/
+vi /var/flexlm/maya/lic (add below lines)
+SERVER 10.1.58.27 2080
+USE_SERVER
+
+/usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+
+/usr/autodesk/maya2016/bin/maya
+
+1  nmtui
+    2  reboot
+    3  nmtui
+    4  reboot
+    5  vi /etc/sysconfig/network-scripts/ifcfg-eno1 
+    6  systemctl network service restart
+    7  systemctl networkservice restart
+    8  systemctl network restart
+    9  systemctl restart network
+   10  ping 4.2.2.2
+   11  yum update -y
+   12  cd /etc/modprobe.d/
+   13  ls
+   14  vi blacklist-nouveau.conf
+   15  update-initramfs -u
+   16  lsmod | grep nouveau
+   17  vi /etc/default/grub
+   18  ls 
+   19  rm -rvf blacklist-nouveau.conf 
+   20  vi /etc/modprobe.d/blacklist.conf
+   21  reboot
+   22  init 3
+   23  cd /root/Downloads/
+   24  chmod a+x NVIDIA-Linux-x86_64-470.86.run 
+   25  chmod a+x NVIDIA-Linux-x86_64-384.98.run 
+   26  sh NVIDIA-Linux-x86_64-470.86.run 
+   27  init 5
+   28  vi /etc/modprobe.d/blacklist.conf
+   29  grubby ––update-kernel=ALL ––args="rd.driver.blacklist=nouveau nouveau.modeset=0"
+   30  grubby --update-kernel=ALL --args="rd.driver.blacklist=nouveau nouveau.modeset=0"
+   31  mv /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
+   32  echo "blacklist nouveau" > /etc/modprobe.d/nouveau-blacklist.conf 
+   33  dracut /boot/initramfs-$(uname -r).img $(uname -r)
+   34  reboot
+   35  lspci | grep -i --color 'vga\|3d\|2d'
+   36  lsmod | grep nouveau
+   37  init 3
+   38  cd /etc/modprobe.d/
+   39  ls -ll
+   40  cat blacklist.conf 
+   41  cat nouveau-blacklist.conf 
+   42  cat nvidia-installer-disable-nouveau.conf 
+   43  cd /root/Downloads/
+   44  sh NVIDIA-Linux-x86_64-470.86.run 
+   45  yum install gcc
+   46  sh NVIDIA-Linux-x86_64-470.86.run 
+   47  yum install kernel-source
+   48  yum install kernel source
+   49  yum install kernel-devel
+   50  yum install kernel-headers
+   51  sh NVIDIA-Linux-x86_64-470.86.run 
+   52  yum install pkg-config
+   53  yum install libglvnd development
+   54  yum list kernel*
+   55  uname -r
+   56  vi /etc/grub2-efi.cfg 
+   57  sh NVIDIA-Linux-x86_64-384.98.run 
+   58  init 5
+   59  yum install nvidia-driver-latest-dkms
+   60  yum install dkms
+   61  yum install cuda-drivers
+   62  cd /usr/lib64/
+   63  ls -ll
+   64  yum install freeglut-devel libX11-devel libXi-devel libXmu-devel  make mesa-libGLU-devel freeimage-devel
+   65  yum group install "Development Tools"
+   66  yum install kernel-devel
+   67  yum -y install epel-release
+   68  yum -y install dkms
+   69  reboot
+   70  init 3
+   71  cd /root/Downloads/
+   72  sh NVIDIA-Linux-x86_64-384.98.run 
+   73  sh NVIDIA-Linux-x86_64-470.86.run 
+   74  reboot
+   75  cd /usr/autodesk/maya2016/bin/
+   76  df -h
+   77  ls
+   78  cd Downloads/
+   79  ls
+   80  rpm -ivh nomachine_7.7.4_1_x86_64.rpm 
+   81  nvidia-smi 
+   82  history 
+   83  cd /root/Downloads/
+   84  ls
+   85  cd /root/Desktop/
+   86  ls
+   87  vi howtoinstalldriver
+   88  cat howtoinstalldriver 
+   89  vi howtoinstalldriver
+   90  cd /usr/autodesk/maya2016/bin/
+   91  ls -ll
+   92  maya
+   93  cat /etc/profile.d/
+   94  cd /etc/profile.d/
+   95  ls -ll
+   96  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+   97  cd /usr/autodesk/maya2016/bin/
+   98  maya
+   99  ping maya-lic
+  100  maya
+  101  vi /usr/autodesk/maya2016/bin/License.env
+  102  vi /var/flexlm/maya.lic
+  103  cd /usr/autodesk/maya2016/bin/maya
+  104  cd /usr/autodesk/maya2016/bin/
+  105  ls -ll
+  106  maya
+  107  adlmreg –u S <657H1> 2016.0.0.F
+  108  cd ..
+  109  ls
+  110  cd adlm/
+  111  ls
+  112  cd ..
+  113  cd bin/
+  114  ls -ll
+  115  cat License.env
+  116  vi /etc/profile.d/maya.lic
+  117  vi /var/flexlm/maya/lic
+  118  cd /var/flexlm/
+  119  ls -ll
+  120  cat lic
+  121  cat maya.lic
+  122  cd /usr/autodesk/maya2016/bin/
+  123  ls
+  124  cp /var/flexlm/lic
+  125  cp /var/flexlm/lic lic
+  126  ls -ll
+  127  cat lic
+  128  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  129  ls -ll
+  130  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaC
+  131  yum search libadlm*
+  132  yum search libadlmPIT
+  133  yum install libadlm*
+  134  maya
+  135  cd /usr/autodesk/
+  136  ls -ll
+  137  cd maya2016/
+  138  ls
+  139  cd adlm/
+  140  ls
+  141  cd li
+  142  cd ..
+  143  cd lib/
+  144  ls
+  145  yum install libadlmPIT.so.11
+  146  ping 10.1.16.8
+  147  vi /etc/profile.d/maya.sh
+  148  cd /usr/autodesk/maya2016/bin/
+  149  cat lic
+  150  vi lic
+  151  maya
+  152  cat /var/opt/Autodesk/Adlm/Maya2016/Maya
+  153  cd /var/opt/Autodesk/Adlm/Maya2016/Maya
+  154  cd /var/opt/Autodesk/Adlm/Maya2016/
+  155  ls
+  156  pwd
+  157  cd /usr/autodesk/maya2016/bin/
+  158  maya
+  159  history 
+  160  cd /root/
+  161  cd Downloads/
+  162  ls
+  163  cd Maya_2016_SP5_EN_Linux_64bit/
+  164  ls
+  165  ./setup
+  166  ping vm.vfx.net
+  167  cat /etc/hosts
+  168  vi /etc/hosts
+  169  ping vm.vfx.net
+  170  netstat 10.1.16.8
+  171  ./setup
+  172  vi howtoinstalldriver
+  173  mount -a
+  174  df -h
+  175  cd /run/media/root/CENTOS\ 7\ X8/
+  176  ls -ll
+  177  cd soft/
+  178  ls -ll
+  179  vi howtoinstalldriver
+  180  vi /etc/default/grub
+  181  cat /etc/default/grub
+  182  ls -ll
+  183  pwd
+  184  scp -r Nuke10.0v4-linux-x86-release-64-installer /root/Downloads/
+  185  cd /root/Downloads/
+  186  ls -ll
+  187  cd Maya_2016_SP5_EN_Linux_64bit/
+  188  ls
+  189  rpm -ivh Maya2016_64-2016.0-2360.x86_64.rpm adlmapps11-11.0.15-0.x86_64.rpm adlmflexnetclient-11.0.15-0.x86_64.rpm 
+  190  nvidia-smi
+  191  cd /usr/autodesk/
+  192  ls
+  193  cd maya2016/
+  194  ls
+  195  cd bin/
+  196  ls
+  197  cd /usr/lib64/
+  198  yum install /usr/lib64/libXp.so.6
+  199  yum install /usr/lib64/libtiff.so.3
+  200  yum install /usr/lib64/libfam.so.0
+  201  yum install /usr/lib64/libpng12.so.0
+  202  cd /root/Downloads/
+  203  ls -ll
+  204  sh Nuke10.0v4-linux-x86-release-64-installer 
+  205  s
+  206  ls
+  207  vi /usr/autodesk/maya2016/bin/License.env
+  208  cd /var/flexlm/
+  209  ls -ll
+  210  pwd
+  211  cd /usr/local/src/
+  212  ls -ll
+  213  vi /var/flexlm/maya/lic
+  214  cd /var/flexlm/
+  215  ls
+  216  vi /var/flexlm/maya/lic
+  217  vi /var/flexlm/lic
+  218  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  219  cd /usr/autodesk/maya2016/bin/adlmreg
+  220  cd /usr/autodesk/maya2016/bin/
+  221  ls -ll
+  222  cd /usr/lib64/
+  223  yum install /usr/lib64/libadlmPIT.so.11
+  224  yum install libadlmPIT.so.11
+  225  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  226  locate libadlmPIT.so.11
+  227  cat /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  228  clear
+  229  cat /var/opt/Autodesk/Adlm/Maya2016/install.env
+  230  vi /var/opt/Autodesk/Adlm/Maya2016/install.env
+  231  cd /var/opt/Autodesk/Adlm/Maya2016/
+  232  cat install.env 
+  233  ls
+  234  cd /root/Downloads/
+  235  ls -ll
+  236  cat Viewd-Maya-Network-License-Installation-standalone-system 
+  237  cd /usr/lib
+  238  cd /usr/lib64
+  239  ls -ll
+  240  ls -al libadlm
+  241  ls -al libadlmPIT.so
+  242  ls -al libadlmPIT.so.11
+  243  cd ..
+  244  cd lib
+  245  ls -al libadlmPIT.so
+  246  locate libadlmPIT.so
+  247  cd ..
+  248  cd lib64/
+  249  locate libadlmPIT.so
+  250  ls
+  251  ls -al libadlmPIT.so 
+  252  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  253  ln -s libadlmPIT.so.11 libadlmPIT.so
+  254  ln -s libadlmPIT.so libadlmPIT.so.11
+  255  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  256  ls -al libadlmutil.so 
+  257  ln -s libadlmutil.so libadlmutil.so.11
+  258  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit
+  259  cd /root/Downloads/
+  260  ls
+  261  cat maya 
+  262  vi maya 
+  263  cd /var/flexlm
+  264  ls
+  265  glxinfo | less
+  266  cd /opt/Autodesk/Adlm/R14/lib64/
+  267  cd /opt/Autodesk/Adlm/R11/lib64/
+  268  ls -ll
+  269  /usr/autodesk/maya2018/bin/adlmreg -i N <productKey1> <productKey2> 2018.0.0.F <serialNum>
+  270  /usr/autodesk/maya2016/bin/adlmreg -i N <657H1> <657H1> 2016.0.0.F <396-67452787> /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit 
+  271  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit 
+  272  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F <396-67452787> /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit 
+  273  /usr/autodesk/maya2016/bin/adlmreg -i N 657H1 657H1 2016.0.0.F 396-67452787 /var/opt/Autodesk/Adlm/Maya2016/MayaConfig.pit 
+  274  maya
+  275  cd /usr/autodesk/maya2016/
+  276  maya
+  277  cd /var/flexlm/
+  278  ls
+  279  cat maya.lic 
+  280  cd /usr/autodesk/maya2016/bin/
+  281  maya
+  282  vi /etc/hosts
+  283  ping maya.lic
+  284  maya
+  285  cd /usr/flexm
+  286  cd /var/flexlm/
+  287  ls
+  288  ls -al
+  289  chmod -R 775 maya.lic 
+  290  ls -al
+  291  cd /root
+  292  cd Downloads/
+  293  ls
+  294  cd Maya_2016_SP5_EN_Linux_64bit/
+  295  cd ..
+  296  chmod -R 775 Maya_2016_SP5_EN_Linux_64bit/
+  297  ls -al Maya_2016_SP5_EN_Linux_64bit/
+  298  cd Maya_2016_SP5_EN_Linux_64bit/
+  299  ./setup
+  300  cd /usr/autodesk/maya2016/bin/
+  301  maya
+  302  cd /
+  303  yum install -y realmd samba-common- samba-common-tools oddjob oddjob-mkhomedir sssd
+  304  realm join -U administrator primefocushyd.com
+  305  vi /etc/sssd/sssd.conf 
+  306  reboot
+  307  id satyanarayana.k
+  308  cat /etc/redhat-release 
+  309  yum install google-chrome-stable_current_x86_64
+  310  yum install google-chrome
+  311  vi /etc/fstab 
+  312  ssh 10.1.27.201
+  313  vi /etc/fstab 
+  314  cd /
+  315  mkdir jobs
+  316  mount -a
+  317  ping primefocushyd.com
+  318  ping primefocushyd
+  319  vi /etc/fstab 
+  320  mount -a
+  321  vi /etc/fstab 
+  322  mount -a
+  323  df -h
+  324  vi /etc/fstab 
+  325  mount -a
+  326  vi /etc/fstab 
+  327  cd /root/Downloads/
+  328  ls -ll
+  329  cd Maya_2016_SP5_EN_Linux_64bit/
+  330  ls
+  331  ./setup
+  332  cat /etc/fstab 
+  333  mount -a
+  334  vi /etc/fstab 
+  335  mount -a
+  336  df -h
+  337  vi /etc/fstab 
+  338  umount /jobs
+  339  mount -a
+  340  df -h
+  341  vi /etc/fstab 
+  342  mount -a
+  343  vi /etc/fstab 
+  344  mount -a
+  345  df -h
+  346  cd /jobs/jsre
+  347  ls -ll
+  348  yum install helvetica-bold-r-normal
+  349  yum install helvetica-bold
+  350  yum install helvetica*
+  351  yum install xorg-x11-fonts-ISO8859-1-100dpi
+  352  yum install vlc*
+  353  yum search vlc*
+  354  yum install vlc-core
+  355  yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+  356  yum install vlc
+  357  yum install vlc-core
+  358  vlc
+  359  su satyanarayana.k
+  360  google-chrome --no-sandbox --user-data-dir
+  361  google-chrome
+  362  google-chrome --version
+  363  firefox 
+  364  google-chrome
+  365  yum install google-chrome-stable.x86_64
+  366  yum list google-chrome-stable.x86_64
+  367  yum list google-*
+  368  yum list google-chrome-stable.x86_64
+  369  yum install LibreOffice*
+  370  yum install libreOffice*
+  371  cd /root/Downloads/
+  372  ls
+  373  rpm -ivh google-chrome-stable-78.0.3904.70-1.x86_64.rpm 
+  374  ls
+  375  cd libfonts_googlechrome/
+  376  rpm -ivh liberation-*
+  377  cd ..
+  378  rpm -ivh google-chrome-stable-78.0.3904.70-1.x86_64.rpm 
+  379  ls
+  380  cat /etc/resolv.conf 
+  381  ping primefocushyd.com
+  382  ping test
+  383  ping pfw-dc
+  384  ping pfw-dc.primefocushyd.com
+  385  cat /etc/sysconfig/network-scripts/ifcfg-eno1 
+  386  ping pfw-pdc.primefocushyd.com
+  387  ping hyd.primefocushyd.com
+  388  ls
+  389  rpm -ivh google-chrome-stable_current_x86_64.rpm 
+  390  cd /usr/bin/
+  391  ls
+  392  pwd
+  393  cd /root/Downloads/
+  394  ls
+  395  rpm -ivh google-chrome-stable-78.0.3904.70-1.x86_64.rpm 
+  396  yum install lsb_release
+  397  cd /usr/lib64/
+  398  pwd
+  399  yum install /usr/lib64/libXss.so.1
+  400  yum install /usr/lib64/libappindicator3.so.1
+  401  cd /root/Downloads/
+  402  ls
+  403  rpm -ivh google-chrome-stable-78.0.3904.70-1.x86_64.rpm 
+  404  cd libfonts_googlechrome/
+  405  ls
+  406  rpm -ivh liberation-*
+  407  yum install lsb*
+  408  ls
+  409  rpm -ivh google-chrome-stable_current_x86_64.rpm 
+  410  cat /etc/redhat-release 
+  411  yum update google-chrome-stable
+  412  wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+  413  yum install ./google-chrome-stable_current_x86_64.rpm
+  414  yum update google-chrome-stable
+  415  yum-complete-transaction
+  416  yum history redo last
+  417  yum update google-chrome-stable
+  418  google-chrome --version
+  419  locate google-chrome
+  420  locate google-chrome*
+  421  cd ..
+  422  cd /usr/local/share/
+  423  ls
+  424  cd applications/
+  425  ls
+  426  cd ..
+  427  vi /etc/hostname 
+  428  realm leave primefocushyd.com
+  429  realm join -U administrator primefocushyd.com
+  430  vi /etc/sssd/sssd.conf 
+  431  reboot
+  432  vi /etc/hostname 
+  433  realm leave primefocushyd.com
+  434  realm join -U administrator primefocushyd.com
+  435  vi /etc/sssd/sssd.conf 
+  436  reboot
+  437  vi /etc/hostname 
+  438  realm leave primefocushyd.com
+  439  realm join -U administrator primefocushyd.com
+  440  vi /etc/sssd/sssd.conf 
+  441  reboot
+  442  realm leave primefocushyd.com
+  443  realm join -U administrator primefocushyd.com
+  444  vi /etc/sssd/sssd.conf 
+  445  init 6
+  446  realm leave primefocushyd.com
+  447  realm join -U administrator primefocushyd.com
+  448  vi /etc/sssd/sssd.conf 
+  449  init 6
+  450  cd /jobs/
+  451  ls -ll
+  452  chmod -Rvf 775 jsre jsre_pilot
+  453  ls -ll
+  454  chmod -Rvf 775 jsre_pilot
+  455  ls -al
+  456  cd jsre
+  457  ls -ll
+  458  cd ..
+  459  ls 
+  460  ls -al
+  461  exit
+  462  cd /jobs/jsre
+  463  ls -ll
+  464  chmod -Rvf 777 art_dev
+  465  ll
+  466  cd art_dev/
+  467  ll
+  468  mkdir test
+  469  cd /jobs/jsre_pilot/
+  470  ls -ll
+  471  cd art_dev/
+  472  mkdir test
+  473  ls -l
+  474  cd ..
+  475  ls -ll
+  476  umount /jobs 
+  477  reboot
+  478  umount /jobs 
+  479  mount /jobs
+  480  cd /jobs/jsre
+  481  ls
+  482  mkdir test
+  483  ls -ll
+  484  rm -rvf test/
+  485  exit
+  486  umount
+  487  umount /jobs 
+  488  ssh 10.1.56.110
+  489  cd /jobs/
+  490  ls -ll
+  491  chown -R root:vfx_cg test/
+  492  cd jsre
+  493  mkdir test
+  494  cd /root/Desktop/
+  495  ls
+  496  scp -r howtoinstalldriver root@10.1.56.61:/root/Desktop/
+  497  exit
+  498  cd /root/Downloads/
+  499  ls -ll
+  500  scp -r google-chrome-stable google-chrome-stable-78.0.3904.70-1.x86_64.rpm Maya_2016_SP5_EN_Linux_64bit root@10.1.56.61:/root/Downloads/
+  501  ls -ll
+  502  cd Maya_2016_SP5_EN_Linux_64bit/
+  503  ls -ll
+  504  ./setup
+  505  ./ setup
+  506  ./setup
+  507  cd /root/Downloads/
+  508  ls -ll
+  509  scp -r libfonts_googlechrome root@10.1.56.61:/root/Downloads/
+  510  history 
+  511  cat /etc/fstab 
+  512  maya
+  513  nmtui
+  514  systemctl restart network
+  515  ping 10.1.56.1
+  516  systemctl enable network
+  517  ping 10.1.56.1
+  518  nmtui
+  519  ping 10.1.56.1
+  520  systemctl restart network
+  521  ping 10.1.56.1
+  522  realm remove primefocushyd.com
+  523  realm leave primefocushyd.com
+  524  realm join -U administrator primefocushyd.com
+  525  vi /etc/sssd/sssd.conf 
+  526  init 6
+  527  nmtui
+  528  systemctl restart network
+  529  ping 10.1.56.1
+  530  systemctl enable network
+  531  ping 10.1.56.1
+  532  nmtui
+  533  ping 10.1.56.1
+  534  systemctl restart network
+  535  ping 10.1.56.1
+  536  realm remove primefocushyd.com
+  537  realm leave primefocushyd.com
+  538  realm join -U administrator primefocushyd.com
+  539  vi /etc/sssd/sssd.conf 
+  540  init 6
+  541  nmtui
+  542  systemctl restart network
+  543  date -s "NOV 27 2021 19:29:00"
+  544  realm leave primefocushyd.com
+  545  realm join -U administrator primefocushyd.com
+  546  vi /etc/sssd/sssd.conf 
+  547  reboot
+  548  date -s "NOV 27 2021 19:29:00"
+  549  realm leave primefocushyd.com
+  550  realm join -U administrator primefocushyd.com
+  551  vi /etc/sssd/sssd.conf 
+  552  reboot
+  553  passwd root
+  554  init 6
+  555  cd /root/Downloads/
+  556  cd XnView/
+  557  ./xnview.sh 
+  558  pwd
+  559  cd /opt/
+  560  cd /
+  561  cd /root/Downloads/
+  562  cp -r XnView/ /opt/
+  563  cd /opt/XnView/
+  564  cp -r XnView.desktop /usr/share/applications/
+  565  xnview
+  566  cd /opt/XnView/
+  567  ls
+  568  pwd
+  569  sh xnview.sh 
+  570  id vinayk.g
+  571  id vinayak.g
+  572  vi /etc/ntp.conf 
+  573  service ntpd restart
+  574  timedatevtl
+  575  timedatectl
+  576  reboot
+  577  reboot
+  578  realm leave primefocushyd.com
+  579  realm join -U administrator primefocushyd.com
+  580  vi /etc/sssd/sssd.conf 
+  581  init 6

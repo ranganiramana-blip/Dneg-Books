@@ -1,0 +1,112 @@
+viscosity password  
+
+VXDC-YD6Z6X-ZPBJWN-YAAUVY-QKIDAT-L4LF3I
+
+User name DOUBLE NEGATIVE
+
+
+"Is this still an issue?
+Kindly note that this ticket will get closed, if you don't reply."
+
+T9c4Pw*Q?w4Y&iP
+
+
+
+rusg
+kindly restart workstation
+
+
+Due to no update/reply from you, we are considering that this is no longer an issue,
+Hence, closing this ticket.
+
+diwrenBiWig7
+
+Run the following command in command prompt of your Windows 10 computer,
+
+ping mumws1572 -n 30
+
+2. Perform internet speed test on browser of your home computer by visiting
+https://speed.measurementlab.net
+
+Send a screenshot of internet speed test too.
+     445736928   sailendra kumar
+
+
+mumws2572 seems hung.
+
+Workstation needs a restart physically
+
+We have already looped in concerned person to look into this.
+
+You have to wait until workstation is restarted by someone physically in office.
+
+You can request your production team for alternative workstation( if they can provide), till it is restarted.
+
+
+
+Try changing PCoIP quality
+
+You can run the following command for help
+pcoip-quality --help
+
+Refer http://dnet.dneg.com/display/TRAINING/How+to+Select+the+Display+Configuration+for+Remote+PCoIP+Connections for more help
+
+
+
+
+Render issues
+Roshan Tandale (rtad)  and  Ganesh Avhad (gavh) are the ReDefine render guys, which I remember
+
+
+This system is on PF network so need to send mail to itsupport.mf@primefocusworld.com 
+
+
+Rejecting this ticket
+
+
+
+retrieval is done by TECH
+
+tagging Lokesh Mishra
+
+
+Vasant Palav/Darshana Soni   please reset  2FA
+
+Zimbra setup
+Open browser
+Type = zimbra.dneg.com/ — press enter
+Enter your email id and password
+Now click "Begin setup'
+Enter your password
+Next
+Now you will get "pass code" which you have to enter in your phone
+
+yram
+9010061222
+cd /
+
+Install google authenticator in your phone
+The application will ask if you want to configure a Manual entry or Scan a bar code. Choose Manual entry and enter the following details.
+Account = Dneg Zimbra
+Key = "Enter pass code which you got in Zimbra"
+Once the application has been configured it will show a 6 digit code
+
+Now enter that 6 digit code in the Zimbra wizard window and click Next and then Finish.
+
+
+
+
+indly check your home PC resolution.
+
+remote system monitor support to 1920*1080
+
+so changed  personal monitor display setting to 1920*1080 after that screen is working ok asper set resolution.
+
+
+
+
+
+
+
+
+

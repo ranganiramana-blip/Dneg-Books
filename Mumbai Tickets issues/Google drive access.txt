@@ -1,0 +1,5 @@
+/tools/S
+/tools/SITE/etc/google/newstarteraccess --add --user vrra
+/tools/SITE/etc/google/newstarteraccess --remove --user vrra
+
+http://dnet.dneg.com/pages/viewpage.action?spaceKey=DEPMO&title=Google+Workspace+Tech+Processes

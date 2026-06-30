@@ -1,0 +1,36 @@
+
+Kindly please sign in your gmail with your redefine login id and password and check .
+
+If password shows wrong then please reset your login id password and try.
+
+reset your password from remote system with this link  http://intranet.zro.dneg.com/password/change
+
+now try login  on accounts.google.com
+Open Chrome Browser
+Type - accounts.google.com
+Once you logged in
+Click 9 dots in top right corner
+Go to Accounts
+On the left hand side click Security Tab
+Scroll Down click 2-Step Verification
+Enter your mobile number
+Now you will get code in your phone
+enter the code
+Its Done !
+
+For scanning QR code in your Google Authenticator:
+
+Scroll Down in that same page and check Authenticator App
+Click Set up
+What kind of phone you have ?
+Scan QR code in your phone
+Open Google Authenticator App in your p
+
+
+i can see you change your password so the old password is still save there in viscosity so need to remove that first
+
+open viscosity-Preference-Advance-clear credentials 
+
+after that connect again and login with user id and password , hope its work
+
+still there is issue connect with me on zoom

@@ -1,0 +1,60 @@
+
+cd /home/
+rm -rvf sridhar.nadigadda/
+./new_user surajit.barman
+
+IP Removing# cobbler system remove --name=hyd-f1-151
+
+Ip Adding in cobbler:
+cobbler system add --name=hyd-f1-037 --profile=el7.4_workstation --netboot-enabled=yes --hostname=hyd-f1-037 --gateway=10.1.64.250 --mac-address=14:dd:a9:d3:d0:9d --ip-address=10.1.70.37  --static=yes --netmask=255.255.248.0 --interface=eth0
+
+
+
+vi /etc/fstab
+hyd:/ifs/data/systems/home      /home   nfs     defaults,nolock,noatime,nodiratime      0       0
+
+#Run this command from system no hyd-f4-009 (we have made changes to this system so use this system only to run scp command)
+
+cat /etc/krb5.conf
+
+scp /etc/krb5.conf root@10.1.68.1:/etc/krb5.conf
+scp /etc/sssd/sssd.conf root@10.1.68.1:/etc/sssd/sssd.conf
+scp /etc/resolv.conf root@10.1.68.1:/etc/resolv.conf
+
+
+Data folder permissions: chown -Rvf root:10000 JSRE_Redf_Hyd_20211224_01/
+                         chown -Rvf root: "VFX-All" 2022_03
+                         chmod -Rvf 775 2022_03
+
+tar -xvf  for unzip or 
+unzip -x path name 
+For search: rpm -qa | grep -i mari
+
+For  audio
+1. systemctl restart nxserver.service
+2. yum install pulseaudio-module-x11 -y
+
+
+For audio
+Audio issue.
+cd /home/
+  cd satish.bolke/
+  cat lib_libaudio.sh
+  yum install audiofile audiofile-devel -y
+  cat lib_libaudio.sh
+  cat lib_libaudio.sh.old
+  yum install pulseaudio-module-x11 -y
+
+service nxserver.service restart
+
+For MATE install
+yum install epel-release -y
+  127  yum groupinstall "Server with GUI" -y
+  128  yum groupinstall "MATE Desktop"
+  129  systemctl get-default
+  130  systemctl isolate graphical.target
+  131  reboot
+
+ yum install mpv smplayer -y
+
+

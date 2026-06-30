@@ -1,0 +1,9 @@
+For arnold installaction
+cd arnold\for_maya
+ll
+cd /var/opt
+cd /jobs/temp/arnold   for_maya
+accept
+press -1
+copy lucr/autodesk/arnold/maya2022
+	

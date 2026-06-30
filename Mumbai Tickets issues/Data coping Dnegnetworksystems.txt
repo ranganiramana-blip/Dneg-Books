@@ -1,0 +1,4 @@
+
+cd /user_data/ 
+
+/user_data/venkatrg sudo scp -r venkatrg/ vrra@mumws2047:/user_data/venkatrg/

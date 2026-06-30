@@ -1,0 +1,11 @@
+Ortranix removing
+ rm -rf OrnatrixMaya2025 OrnatrixMaya2025.mod
+
+
+For installing
+
+cd seshu.pulavarthi/Downloads/
+chmod u=x Ornatrix_Maya_2025_4_4.2.1.34632_3434203132203532383231.run
+./Ornatrix_Maya_2023_4_4.1.3.32690_3434203132203532383231.run
+
+ ./InstallLicense.3434203132203532383231.1.run

@@ -1,0 +1,29 @@
+Nomachine install
+
+1) remove leftover dirs:
+
+sudo rm -rf /usr/NX /etc/NX /var/NX
+
+or 
+
+sudo rpm -e nomachine
+
+2) install again:
+
+ cd /jobs/TEMP/test/2u/
+
+ rpm -ivh nomachine_7.9.2_1_x86_64.rpm
+
+ rpm -ivh nomachine_6.11.2_1_x86_64.rpm
+
+3) uninstall:
+
+sudo /usr/NX/scripts/setup/nxserver --uninstall
+
+service nxserver.service restart
+
+hyd-mcr-001
+67.1
+
+8150000425
+

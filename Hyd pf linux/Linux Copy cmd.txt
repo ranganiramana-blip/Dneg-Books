@@ -1,0 +1,8 @@
+
+scp -r /jobs/share/jsre/Char\ Tex/katr/ /jobs/share/wotere/Char\ Tex/katr1 
+
+Example for this: - scp  -r /jobs/TEMP/test /Autodesk1 (2020)  to  /var/opt/
+if copy done then give permission chmod –R 777 Autodesk1
+then type
+ ls –ll
+Showing maya two folders Example for this: -                                                                                          /wotere/Char\ Tex/katr1

@@ -1,0 +1,3 @@
+#timedatectl    (to check the present time)
+#hwclock --set --date "03/06/2019 17:57:30"  (month/data/year)
+#hwclock --hctosys    (to sync bios time to systime)

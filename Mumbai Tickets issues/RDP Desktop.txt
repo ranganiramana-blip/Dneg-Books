@@ -1,0 +1,1 @@
+rdesktop -u "username" -d DNEG -g 1440x1080 "machine name"

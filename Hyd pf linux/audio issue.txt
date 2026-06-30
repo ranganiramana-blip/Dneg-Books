@@ -1,0 +1,10 @@
+cd /home/
+ls
+cd satish.bolke/
+ls
+cat lib_libaudio.sh
+yum install audiofile audiofile-devel -y
+cat lib_libaudio.sh
+cat lib_libaudio.sh.old
+yum install pulseaudio-module-x11 -y
+service nxserver.service restart

@@ -1,0 +1,82 @@
+# generic Maya environment
+
+module load common/pf-vfx
+
+set BASE $env(APPS_BASE)/autodesk/maya
+set TREE ${BASE}$env(MAYAVER)
+
+setenv MAYA_DEBUG_ENABLE_CRASH_REPORTING 1
+setenv AW_LOCATION $env(APPS_BASE)/autodesk
+unsetenv AW_COMMON
+setenv MAYA_LOCATION ${TREE}
+
+setenv MAYA_LICENSE_METHOD network
+setenv ADSKFLEX_LICENSE_FILE 10.1.16.8
+
+if { $env(MAYAVER) == "2011" || $env(MAYAVER) == "2011sp1" } {
+	setenv MAYA_HELP_URL http://download.autodesk.com/us/maya/2011help
+} elseif { $env(MAYAVER) == "2012" || $env(MAYAVER) == "2012sp1" } {
+	# very dirty hack, "import hashlib" crashes Maya without this
+	append-path PYTHONPATH /code/lib/$env(DISTRIBUTION)/crypto
+	setenv MAYA_HELP_URL http://download.autodesk.com/global/docs/maya2012/en_us
+}
+
+if { [info exists env(DEPLOY_ENABLE)] && $env(DEPLOY_ENABLE) == "1" } {
+	append-path PYTHONPATH /usr/lib64/python2.6/site-packages
+
+	append-path LD_LIBRARY_PATH $env(MAYA_LOCATION)/lib
+	prepend-path PATH $env(MAYA_LOCATION)/bin
+	append-path MAYA_PLUG_IN_PATH $env(MAYA_LOCATION)/bin/plug-ins
+	append-path MAYA_FILE_ICON_PATH $env(MAYA_LOCATION)/icons
+
+	if { [info exists env(MAYA_PYTHONPATH)] } {
+	    append-path PYTHONPATH $env(MAYA_PYTHONPATH)
+	}
+} else {
+	append-path LD_LIBRARY_PATH $env(MAYA_LOCATION)/lib
+	append-path LD_LIBRARY_PATH /code/lib/$env(DISTRIBUTION)/maya$env(MAYAVER)
+	append-path LD_LIBRARY_PATH /code/td/lib/$env(DISTRIBUTION)/maya$env(MAYAVER)
+	prepend-path PATH $env(MAYA_LOCATION)/bin
+	append-path MAYA_PLUG_IN_PATH $env(MAYA_LOCATION)/bin/plug-ins
+	append-path MAYA_FILE_ICON_PATH $env(MAYA_LOCATION)/icons
+
+	if { [info exists env(DEVINSTALL)] } {
+		append-path MAYA_SCRIPT_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts
+		append-path MAYA_SCRIPT_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts/AETemplates
+		append-path PYTHONPATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/python
+		append-path MAYA_PLUG_IN_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/plugins
+		append-path XBMLANGPATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/icons/%B
+		append-path MAYA_PRESET_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/presets
+		append-path MI_CUSTOM_SHADER_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/rayinc
+		append-path MI_LIBRARY_PATH $env(DEVINSTALL)/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/raylib
+	}
+
+	if { [info exists env(JOB)] } {
+		append-path MAYA_SCRIPT_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts
+		append-path MAYA_SCRIPT_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts/AETemplates
+		append-path PYTHONPATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/python
+		append-path MAYA_PLUG_IN_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/plugins
+		append-path XBMLANGPATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/icons/%B
+		append-path MAYA_PRESET_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/presets
+		append-path MI_CUSTOM_SHADER_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/rayinc
+		append-path MI_LIBRARY_PATH /jobs/$env(JOB)/common/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/raylib
+	}
+
+	append-path MAYA_SCRIPT_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts
+	append-path MAYA_SCRIPT_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts/AETemplates
+	append-path PYTHONPATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/python
+	append-path XBMLANGPATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/icons/%B
+	append-path MAYA_PRESET_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/presets
+	append-path MI_CUSTOM_SHADER_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/rayinc
+	append-path MI_LIBRARY_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/raylib
+	append-path MAYA_PLUG_IN_PATH /code/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/plugins
+
+	append-path MAYA_SCRIPT_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts
+	append-path MAYA_SCRIPT_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/scripts/AETemplates
+	append-path PYTHONPATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/python
+	append-path XBMLANGPATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/icons/%B
+	append-path MAYA_PRESET_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/presets
+	append-path MI_CUSTOM_SHADER_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/rayinc
+	append-path MI_LIBRARY_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/mi/raylib
+	append-path MAYA_PLUG_IN_PATH /code/td/addons/$env(DISTRIBUTION)/maya$env(MAYAVER)/plugins
+}

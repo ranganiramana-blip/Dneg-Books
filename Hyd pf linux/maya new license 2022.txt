@@ -1,0 +1,22 @@
+
+First need to rename the Autodesk
+
+mv Autodesk Autodesk_2016
+
+cd /jobs/TEMP/test
+scp -r Autodesk_2022_newlicserver /var/opt/
+cd /var/opt
+ls
+mv Autodesk_2022_newlicserver Autodesk
+chmod -R 777 Autodesk
+
+
+Maya new license mounting 
+
+cd /var/opt/
+ls
+unlink Autodesk
+cd /apps/autodesk/
+cp -rvf Autodesk2016/ /var/opt/
+cp -rvf Autodesk2022/ /var/opt/
+chmod -R 777 /var/opt/

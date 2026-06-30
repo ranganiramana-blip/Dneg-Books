@@ -1,0 +1,5 @@
+dneg-thinclient-vpn-config.run
+try to find this file in user drive
+chmod 777 cd /home/user/download
+dneg-thinclient-vpn-config.run
+./dneg-thinclient-vpn-config.run

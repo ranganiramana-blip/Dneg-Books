@@ -1,0 +1,20 @@
+ssh nomachine2  pinky    ps-ufuserid   kill -9 pid                    nomachine kill process
+sudo /usr/NX/scripts/setup/nxserver --install and run slat-hghstate   Remote not login with nomachine
+http://tractor.mum.dneg.com/                                          Tractor login url
+http://dnet.dneg.com/display/VP/Unreal+Updater+for+Windows            unreal Windows updates  
+sudo usersetup --retire --username  AAA                               Exit employee 
+\\dist\dist\Win\ProEXR_v2.0_win\EXR latest download                   exrfile plugin path  
+Windows cd salt  salt-highstate.bat                                   Windows system satlt cmd
+
+http://dnet.dneg.com/display/TECH/Attempt+To+Save+A+Crashed+Maya+Scene Attempt To Save A Crashed Maya Scene
+http://dnet.dneg.com/pages/viewpage.action?pageId=39129003            sensu check
+https://www.linuxatemyram.com/                                        Cache 
+ls -hl /jobs/                                                         Folder check
+http://shotgun/page/659655                                            Shotgun URL
+http://dnet.dneg.com/display/SHOTGUN/ReDefine+Shotgun+Access+2021
+https://primefocus.beehivehcm.com/                                    Beehive url
+https://docs.google.com/forms/d/e/1FAIpQLSfIo_ACao00KmB_MabTcuuiTwNN38KRwKvMXzSGN-sagpH_qw/viewform      lim survay link
+http://dnet.dneg.com/display/IS/DNEG+Google+Workspace+%3A+Access+to+Google+Drive+off+the+VPN    Gsheet
+http://dnet.dneg.com/display/DIS/Using+Google+Single+Sign-On+%28SSO%29+to+access+Zoom    Zoom
+
+           

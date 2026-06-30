@@ -1,0 +1,9 @@
+Go to
+
+C:\vedtools_offline-2.27.4-rc\Tools\Digital
+
+Right clisck on Workflow2020Offline.bat
+
+Send to desktop 
+
+Doucle click on Workflow2020Offline.bat

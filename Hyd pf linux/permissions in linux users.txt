@@ -1,0 +1,5 @@
+Hi Team,  Often times we are getting folder lock issues on linux machines,
+ for that issue pls go to that particular path first and then 
+check owner attributes for that file or folder by giving
+ #ls -l <filename> then do an su <username> 
+ex: su kishore.dangeti  then give below command from that particular locked user # chmod - R 777 <filename>

@@ -1,0 +1,39 @@
+Umashankar Kothuru
+
+Rv player Activation steps:
+
+1- from the user's spam box mail link, needs to activate the Autodesk account. AFTER Activation:
+
+2- open terminal, type RV2022
+
+3 - in RV player enter below URL. https://redefine.shotgrid.autodesk.com
+
+4- login through user credentials..(created on link)
+
+
+
+Try from step-2, 
+
+Rv player Activation steps:
+1- from the user's spam box mail link, needs to activate the Autodesk account. (Only for new users)
+
+AFTER Activation:
+2- open terminal, type
+rv2022
+
+3 - in RV player enter below URL.
+https://pfw.shotgunstudio.com
+
+4- login through user credentials..(created on link)
+
+
+Try from 
+Linux- step-2,
+Windows - step3,
+Rv player Activation steps:
+1- from the user's spam box mail link, needs to activate the Autodesk account. (Only for new users)
+AFTER Activation:
+2- open terminal, type rv2022
+3 - in RV player enter below URL.
+https://pfw.shotgunstudio.com
+4- login through user credentials..(created on link)

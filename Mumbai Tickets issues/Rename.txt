@@ -1,0 +1,63 @@
+Mentioned workstation is offline need to turn on physically @ onsite once its done we will let you know.
+menwhile kindly coordinate with production team for alternative workstation if they can provide.
+
+This is duplicate ticket kindly follow the mentioned linked ticket number.
+
+
+https://chrome.google.com/webstore/detail/gmail-reply-at-the-top/okmcmppcoeknickodfpmlancikgghcll/related?hl=en
+
+Please open zoom and go to Contacts tab > + > Add a Contact and enter their email address (@dneg.com or @redefine.co) to add them manually in Zoom.
+
+
+nimby -i
+du-sh
+
+Kindly try to check now and revert back.
+
+There is no further update we assumed issue has been resolved hence we are closed this ticket. 
+
+if still same issue occurred kindly rise new ticket. 
+
+
+apologies
+sorry for late replay, We assumed this issue have been resolved,
+hence we are closed this ticket if still same issue acquired,  please rise new ticket to support@redefine.co \ support@dneg.com
+
+
+
+I have reseted your password and shared on personal mail id which is updated on workday so please check now.
+Please check your personal mail ID, which was updated on workday, as I have shared the new password with you.
+
+if not working viscosity please follow the mentioned steps.
+Go to Viscosity preferences ---- select Advanced Tab — click Clear All saved credentials and try to connect now with new password.
+
+Please download VPN folder from Google drive its temporarily giving access
+
+its limited time once its done let us know. if anything help required during the setup please screen share me on zoom.
+
+New show Access permissions handled by the producer please get in touch with him.
+
+Consuming more then 200% CPU resources.kindly you need to do Maya file optimize and close multiple unwanted Maya applications.
+
+
+
+
+Please Go to Google Authenticator App open in your mobile then click on top on the corner right side click ... 3 dots
+
+then click on settings  then click on time correction for codes then click on sync now click ok 
+
+after that again try to login VPN.
+
+
+https://docs.google.com/spreadsheets/d/1OF1SCKqttiWj60n-thUCLfzuvTCce2JxdnQgJozv94k/edit#gid=0    Main frame reboot list
+
+TECH-630209 Pritesh ticket
+/tools/SITE/etc/bin/pcoip-free-workstations -d 16 -l -v
+
+
+++Lokesh Mishra / Ashish Dutt   retry files
+
+
+
+
+

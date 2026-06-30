@@ -1,0 +1,11 @@
+
+setenv https_proxy http://proxy:3128
+setenv http_proxy http://proxy:3128
+HA18 
+
+11  lic --houdini       Licence check.
+    lic --houdini --site van
+sudo systemctl status hserver
+sudo systemctl restart hserver
+
+try with this new terminal : dnhoudinicore

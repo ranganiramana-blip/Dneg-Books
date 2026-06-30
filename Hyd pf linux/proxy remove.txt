@@ -1,0 +1,14 @@
+ cd /etc/profile.d/
+  214  ls
+  215  cd /apps/sreelinux/proxy/
+  216  cp proxy.sh /etc/profile.d/
+  217  cp hyd-mcr-012.crt /etc/pki/ca-trust/source/anchors/
+  218  cp policies.json /etc/firefox/policies
+  219  cd /usr/share/applications/
+  220  cp google-chrome.desktop
+  221  cat google-chrome.desktop
+  222  sed '/^Exec/s/$/ --proxy-server="10.1.69.12:3128"/' /usr/share/applications/google-chrome.desktop  -i
+  223  sed '/^Exec/s/$/ --proxy-server="10.1.69.12:3128"/' /usr/share/applications/firefox.desktop  -i
+  224  update-ca-trust
+  225  systemctl daemon-reload
+  226  init 0

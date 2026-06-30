@@ -1,0 +1,74 @@
+
+to install teradecii:
+
+curl -1sLf https://dl.teradici.com/xHfmOLEc9bWcllgT/pcoip-agent/cfg/setup/bash.rpm.sh | sudo -E distro=el codename=7 bash
+
+yum install pcoip-agent-graphics
+
+pcoip-register-host --registration-code=1QFLJUDDWXPJ@CD59-63B5-F8DA-A655
+
+to change matte;
+
+   cd /usr/share/xsessions/
+   ll
+   mv gnome-classic.desktop t_gnome-classic.desktop
+   mv gnome.desktop t_gnome.desktop
+   ll
+10.1.69.2done
+10.1.69.5done
+10.1.69.8done
+10.1.69.9done
+10.1.69.13done
+10.1.69.15done
+10.1.69.17done
+10.1.69.18done
+10.1.69.19done
+10.1.69.20
+10.1.69.21
+10.1.69.27
+10.1.69.28
+10.1.69.29
+10.1.69.31
+10.1.69.32
+10.1.69.33
+10.1.69.39Done
+10.1.69.40
+10.1.69.41
+10.1.69.46
+10.1.69.47
+10.1.69.48
+10.1.69.51
+10.1.69.56
+10.1.69.57
+10.1.69.58
+10.1.69.64
+10.1.69.65
+10.1.69.66
+10.1.69.70
+10.1.69.73
+10.1.69.78
+10.1.69.86
+10.1.69.88
+10.1.69.89
+10.1.69.91
+10.1.69.92
+10.1.69.93Done
+10.1.69.95
+10.1.69.96
+10.1.69.99
+10.1.69.104
+10.1.69.106
+10.1.69.115Done
+10.1.69.116
+10.1.69.117Done
+10.1.69.118
+10.1.69.119
+10.1.69.120
+10.1.69.122
+10.1.69.124
+10.1.69.128
+10.1.69.131
+10.1.69.133
+
+
+72

@@ -1,0 +1,37 @@
+1. http://dnet.dneg.com/pages/viewpage.action?spaceKey=DEPMO&title=Google+Workspace+Tech+Processes   GWS trining 
+2.http://dnet.dneg.com/display/TRAINING/Google+Workspace+Help-Space                                  GWS trrining
+3. I have downloaded it here /jobs/SITE/REF/mumbai/users/TECH/GWS/Workspace\ Admin\ Training\ \(2021-05-25\ at\ 09_03\ GMT-7\).mp4 Admin tryning
+4.  Isilon storage
+    shutdown -p now
+    isi_reformate_node
+    isi_gather_info --esrs  for logs
+
+
+
+# isi status
+# uname -r
+# isi_for_array -n7 isi devices drive list
+# isi_for_array -n7 isi_hw_status | grep -i serno
+# isi_for_array -n7 isi_hw_status | grep -i prod
+# isi_for_array -n7 isi statistics drive list
+
+
+Step 1: Format the drives in Used state
+
+# isi devices drive format 25
+# isi devices drive format 27
+# isi devices drive format 28
+# isi devices drive format 31
+
+Step 2: Re-add the formatted drives
+
+# isi devices drive add 25
+# isi devices drive add 27
+# isi devices drive add 28
+# isi devices drive add 31
+
+
+# isi_for_array -s 'isi_hw_status | grep SerNo; isi devices list | egrep -vi "healthy|l3" '
+
+https://www.dell.com/support/article/en-us/sln320709/customer-replaceable-unit-cru-videos-for-avamar-atmos-celerra-connectrix-isilon-scaleio-vnx-vnxe-dell-emc-unity-products?lang=en
+

@@ -1,0 +1,1 @@
+sudo /tools/SITE/etc/google/groupsutil --user pspra@redefine.co --group rd-lighting-hyd@redefine.co

@@ -1,0 +1,6 @@
+take ssh virar
+sudo passwd-email -u <user id> -m -p 
+sudo passwd-email -u pesw -m -p
+
+
+vpnQRutil.py | grep gkra

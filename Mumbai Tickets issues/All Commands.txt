@@ -1,0 +1,40 @@
+1.  mate-panel --reset   for taskbar restore.
+2.  ethtool eth0         for networkspeed check
+3.  http://dnet.dneg.com/display/~jso/Using+Wacom+Pen+pressure+over+PCoIP   tab penpreser
+4.  http://intranet.zro.dneg.com/password/change   Change the password 
+5.  http://mumjenkins2/view/tech/job/tech-usersetup-homedir/  Profile Change
+6.  project = "Tech Support" AND assignee is EMPTY AND status != Resolved AND status != Closed AND Site = hyd
+7.  assignee = vrra AND status != Resolved AND status != CLOSED AND status != REJECTED
+8.  assignee = vrra AND status = resolved
+9.  ps -elf | grep 'z'    zombie process check
+    sudo pkill -9 PPID          to kill zombie
+    nimby -i        baground process check
+10. lic --mari          licence check
+11  lic --houdini       Licence check.
+    lic --houdini --site van
+sudo systemctl restart hserver
+sudo systemctl status hserver
+    lic --bokeh
+    lic --nuke
+12. yum remove pidgin
+13. nvidia-smi
+14. sudo echo 1 >/proc/sys/vm/drop_caches     Free -g free -m free -h
+    sudo sh -c "sync; echo 3 >/proc/sys/vm/drop_caches
+15. history -c  for clear the history
+16. swapoff -a
+17. http://dnet.dneg.com/display/TECH/Zimbra+Mobile+Documentation
+18. http://dnet.dneg.com/display/REDEFINE/Creeper  storage data zize check
+19. ssh mumbatch1                    dnquota
+    dnquota --volume=/vol/u -r vrra
+    du -sh
+20.
+/etc/resolv.conf 
+sudo salt-call grains.item role
+
+for mail bounce once send mail to jsre-char-mum@redefine.co
+sudo usersetup --retire --username  anaga   
+21.https://zoom.us/forgot_password        Zoom password reset 
+22. sudo systemctl restart nxserver   nomachine restart service.
+23. For outlook migrate pst file.
+https://www.agnesscott.edu/its/files/documents/131203_Gmail_Personal_Folders_Migration.pdf
+24. https://adfs.dneg.com/adfs/ls/idpinitiatedSignon.aspx?loginToRp=http://www.workday.com/dneg      workday Page login

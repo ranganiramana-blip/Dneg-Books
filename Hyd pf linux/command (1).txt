@@ -1,0 +1,279 @@
+
+houdini
+lic --houdini
+
+
+lic --mari
+
+
+
+8 notes and each 120 gb around
+
+
+ethtool eth1    to know the speed of that port
+
+nvidia-driver --report
+
+updating nvidia driver 
+sudo nvidia-driver --uninstall  
+sudo ncvidia-driver --auto  
+sudo reboot -f
+
+
+nvidia-smi 
+if you got output is not coppatiable with drivers.
+
+
+dnhinv  hard ware information.
+
+
+
+df -h /user_data
+
+ps -elf | grep D
+ps -elf | grep Z
+
+
+sssd service fail
+rm -rf /var/lib/sss/db/*
+restart sssd service
+
+
+
+
+cat show
+dnshow site
+
+
+cleared temp files
+ncdu /user_data/.tmp/
+ls -al
+find /user_data/.tmp/ -type f -name "*.tmp"
+find /user_data/.tmp/ -type f -mtime +2 -name "hfs*.tmp" | sudo xargs ls -hlatr
+find /user_data/.tmp/ -type f -mtime +2 -name "hfs*.tmp" | sudo xargs rm -rf
+
+
+
+
+
+find /user_data/.tmp/publish_temp_* -mtime +1 | xargs ls -hlatr
+ 
+
+find /user_data/.tmp/publish_temp_* -mtime +2 | xargs sudo rm -rf
+ 
+
+dnpasswrd -i ksrr
+          -u
+          -r
+
+
+Viscosity login failed
+rep nsre /jobs/SITE/syslog/workstation/mumws198/2020-10-29-syslog.log
+
+
+
+
+pcoip error
+
+pcoip-list-licenses
+
+sudo systemctl status pcoip -l
+
+if service is failed
+df -h /user_data/
+sudo find /user_data/.tmp/publish_temp_* -mtime +2 | xargs sudo rm -rf
+rm -rf /var/lib/pcoip-agent/licensing/5/*
+systemctl restart pcoip
+
+
+562502
+
+sudo salt-call state.sls roles.nomachine-homework --state-verbose=False
+
+cd /etc/
+sudo rm -rvf pcoip-agent*
+cd /etc/pcoip-agent
+cd /usr/lib
+ls
+sudo rm -rvf *pcoip-agent
+cd
+sudo salt-call state.sls roles.pcoip-homework --state-verbose=False
+salt-highstate
+sudo systemctl status pcoip
+
+
+user not conneting ws 
+
+sudo systemctl stop pcoip
+sudo yum remove -y pcoip-agent-graphics.x86_64
+sudo systemctl restart lightdm
+
+sait-highstate
+
+
+pcoip disconnecting
+
+less /jobs/SITE/syslog/workstation/mumws1366/2020-10-29-syslog.log 
+
+
+
+user authentication
+
+check Logs
+less /var/log/messages
+l
+     /var/log/pcoip_agent/agent.log
+     
+service sssd status
+service sshd status
+top
+
+
+
+
+
+all  logs are saved in 
+/jobs/site/syslog/workstation/mumws1234/.log
+
+
+
+my system nuke not showing render, script and shots info.
+
+ksrr@mumws2801  ls -ld /user_data/.tmp/nuke/autosave/
+ 
+drwxrwxrwx 2 bqur user 75 Oct 29 11:26 /user_data/.tmp/nuke/autosave/
+
+
+
+Nuke launching error
+Set show name & shot number using dnshow & dnshot, then try launching Nuke.
+
+
+
+maya not opening
+select show 
+then open maya 
+dnshow showname
+ dnmaya
+
+
+
+showinfo CHERE
+
+
+
+
+rename .nuke
+
+/u/mlak mv .nuke/ .nuke_lod
+
+sudo service autofs restart
+
+
+
+PTSUP queue
+go to more option and select move option and select production support.
+please mention, show, full path of shot, error message from script editor etc..
+
+
+
+
+
+
+SAR COMMAND
+
+sudo sar -r -f /var/log/sa/sa31
+ram utilization
+
+sudo sar -C -f /var/log/sa/sa31
+CPU utilization
+
+11:00:01 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+11:10:01 AM     all      0.12      0.01      0.19      0.00      0.00     99.67
+
+
+
+delte user profile in windows system
+
+go to run trype  regedit.msc
+ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+ 
+
+
+
+Photo shop issue?
+
+#/user_data/.tmp (or) cd /user_data/.tmp
+#sudo mv photoshopcs2.vche photoshopcs2.vche.bak
+
+
+
+to set taskbar
+mate-panel --reset
+
+
+
+
+nomachine service
+sudo service nxserver restart
+ sudo /etc/NX/nxserver --restart
+
+sudo /usr/NX/scripts/setup/nxserver --install
+and run slat-hghstate
+
+
+
+
+
+@mumnomachine2 /u/ksrr date ; ps aux | grep dbus | wc -l
+
+
+
+
+
+ssh tractor  -->>  systemctl status tractor-engine2a2WS3D#z!
+
+																			2s1s`ZD46YRVBFGI
+
+
+internet 
+
+total 2gb
+@mumbatch1 /u/ksrr sudo dnquota --volume=/vol/u -r ksrr
+
+or
+
+du -sh
+sacc@mumterminal4 crra]# du -sh
+208M
+
+
+
+Check Zoom installed
+rpm -qa | grep -i zoom
+
+zoom-5.0.413237.0524-1.x86_64 should be installed
+
+If Missing, to Install
+yum install zoom-5.0.413237.0524-1.x86_64
+
+
+
+
+Unused machines List
+
+/u/prit /tools/SITE/etc/bin/pcoip-free-workstations -d 16 -l -v
+
+
+
+trobuleshooting
+
+http://dnet.dneg.com/dosearchsite.action?queryString=nxservice
+
+# yum remove nomachine-enterprise-client
+# salt-call state.sls authentication
+# yum install -y nomachine-terminal-server
+# salt-highstate
+# cp nomachinelicense.lic /usr/NX/etc/server.lic
+
+

@@ -1,0 +1,22 @@
+  TO rcom.serviceescalationmanager@ericsson.com
+    
+ msoc.cat@relianceada.com
+  Subscriber ID : 50000 000 102 290
+
+Escalation Matrix  for DATA Services :		
+Level	Contact Details	Availability
+Level 1	Technical Helpdesk-Executive	24 * 7
+	RCOM.Serviceescalationmanager@relianceada.com  	
+	 Ph: 022-30372496	
+Level 2: After 2 Hrs	Technical Helpdesk-Lead	24 * 7
+	 RCOM.Serviceescalationmanager@relianceada.com  	
+	Ph: 022-30372556	
+Level 3: After 4 Hrs	Service Escalation Lead: Mr. Rajan Bhoyar	9.30am to 6.30pm
+	 rajan.bhoyar@relianceada.com	
+	Tel:  022-30372539 Mobile : 9022338787	
+Level 4: After 12 hrs	Service Escalation Head:  Mr. Pradeep Kunnath	9.30am to 6.30pm
+	pradeep.kunnath@relianceada.com                                                                                     Ph: 022-30372839 / 9029099875	
+		
+
+
+

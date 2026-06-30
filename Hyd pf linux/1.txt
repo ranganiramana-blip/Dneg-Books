@@ -1,0 +1,214 @@
+			Nomachine install & uninstall
+
+sudo /usr/NX/scripts/setup/nxserver --uninstall
+sudo rpm -e nomachine
+cd /jobs/TEMP/test/2u/
+rpm -ivh nomachine_6.11.2_1_x86_64.rpm
+service nxserver.service restart
+sudo /usr/NX/scripts/setup/nxnode --audiosetup
+
+
+			Teradici Install
+
+curl -1sLf https://dl.teradici.com/xHfmOLEc9bWcllgT/pcoip-agent/cfg/setup/bash.rpm.sh | sudo -E distro=el codename=7 bash
+yum install pcoip-agent-graphics
+pcoip-register-host --registration-code=1QFLJUDDWXPJ@CD59-63B5-F8DA-A655
+service pcoip restart
+service pcoip status
+yum remove pcoip-agent-graphics.x86_64
+
+			Domain joining 
+
+realm leave redefine.co
+realm join -U administrator redefine.co
+vi /etc/sssd/sssd.conf
+
+			File  Transfer
+
+scp -r Filename root@systemip:/destinationpath/
+
+			Mate Desktop Install
+yum install epel-release -y
+yum groupinstall "Server with GUI" -y
+yum groupinstall "MATE Desktop"
+systemctl get-default
+systemctl isolate graphical.target
+sudo systemctl restart graphical.target
+
+			Mate Desktop Install for Teradici
+
+cd /usr/share/xsessions/
+mv gnome-classic.desktop t_gnome-classic.desktop
+mv gnome.desktop t_gnome.desktop
+
+			Black Screen issue
+
+systemctl restart display-manager.service
+
+			Audio
+
+cd /usr/lib64
+yum install pulseaudio-module-x11 -y
+ln -s libpython2.7.so.1.0 libpython2.6.so.1.0
+ln -s libIlmImf.so.7.0.0 libIlmImf.so.6
+yum install audiofile audiofile-devel -y
+
+cd /home/satish.bolke/
+cat lib_libaudio.sh
+cat lib_libaudio.sh
+cat lib_libaudio.sh.old
+
+yum install pulseaudio-esound-compat.x86_64
+yum install pulseaudio-libs.i686
+yum install pulseaudio-gdm-hooks.x86_64
+yum install pulseaudio-libs-devel.i686
+yum install pulseaudio-libs-devel.x86_64
+yum install pulseaudio-libs-glib2.i686
+yum install pulseaudio-module-gconf.x86_64
+yum install pulseaudio-module-zeroconf.x86_64
+yum install pulseaudio-qpaeq.x86_64
+
+
+			SMP & MPV install
+yum install mpv smplayer -y
+
+			Lanport Speed 
+
+sudo ethtool eth0 | grep Speed
+
+			Zoom install
+
+cd /jobs/TEMP/test/2u/
+yum install zoom_x86_64.rpm
+
+			Graphic card uninstall
+
+usr/bin/nvidia-uninstall
+
+			Kernal Update
+
+uname -msr
+yum -y update
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+yum list available --disablerepo='*' --enablerepo=elrepo-kernel
+yum --enablerepo=elrepo-kernel install kernel-ml
+yum --enablerepo=elrepo-kernel install kernel-lt
+reboot
+
+yum --enablerepo=elrepo-kernel install kernel-lt
+grub2-mkconfig -o /boot/grub2/grub.cfg
+reboot
+
+
+			Caches Clear
+
+free -g
+echo 3 > /proc/sys/vm/drop_caches
+
+
+			Clear Temp Files
+
+cd /usr/tmp/
+du -sh
+rm -rf *
+find /var/log -mtime +5 | xargs rm -rf *
+
+
+			Maya install
+
+cd /apps/autodesk
+scp -r Autodesk2016 /var/opt/
+scp -r Autodesk2022 /var/opt/
+cd /var/
+chmod -Rvf 777 opt
+cd opt
+ls -ll
+
+			Arnold
+
+cd /jobs/TEMP/Arnold_for_maya
+ls
+./MtoA-5.0.0.4-linux-2022.run
+accept and press enter
+give path
+/usr/Autodesk/arnold/maya2022
+
+give maya destination path
+/var/opt
+enter
+
+			Python & Pycharm
+
+Download Pycharm & Python File
+
+tar -xvf Python-3.9.13.tgz
+cd Python-3.9.13
+./configure
+make
+make install
+
+tar -xvf pycharm-professional-2022.3.tar.gz
+cd pycharm-2022.3/
+cd bin
+chmod u+x pycharm.sh
+sh pycharm.sh
+cd 
+ln -s Downloads/pycharm-2022.1.1/bin/cd /pycharm.sh /usr/local/bin/pycharm
+
+			
+			RV Player
+
+Try from step-2, 
+
+Rv player Activation steps:
+1- from the user's spam box mail link, needs to activate the Autodesk account.
+
+AFTER Activation:
+2- open terminal, type
+RV2022
+
+3 - in RV player enter below URL.
+https://redefine.shotgrid.autodesk.com
+https://pfw.shotgunstudio.com
+
+4- login through user credentials..(created on link)
+
+
+
+			Chrome Installation
+sudo yum update
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo yum localinstall google-chrome-stable_current_x86_64.rpm
+
+			
+			sublime-text
+
+cd /jobs/share/IT
+yum install sublime-text-3211-1.x86_64
+
+
+			Playblast Error
+
+yum install ffmtcp-devel
+yum install ffmpeg-devel ffmpeg
+
+
+			google chromen not opening
+
+yum install epel-release
+yum clean all.
+
+
+			rsync
+
+rsync -avzh shows /ifs/data/safe_backup
+
+
+			ShotGrid Installation
+
+cd /jobs/share/IT
+yum install ShotGridCreate.rpm
+
+Squid
+https://www.youtube.com/watch?v=QmVUXMbm_8M

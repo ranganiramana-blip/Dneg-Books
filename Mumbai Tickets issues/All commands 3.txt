@@ -1,0 +1,191 @@
+			Graphic Card details
+sudo dnhinv
+sudo nvidia-smi
+sudo nvidia-driver --uninstall
+sudo nvidia-driver --auto
+			
+			pcoip Quality Change
+
+pcoip-quality
+
+			DiskQuota Checking
+
+sudo dnquota --volume=/vol/u -r userid
+
+			Ping Status 
+
+ping -n 30 mumws****
+
+			Windows System Remote Desktop
+
+sudo rdesktop mumws**** -g 1024x768
+
+			Linux System Remote Desktop
+
+remote -w mumws****
+
+			panel reset
+
+mate-panel --reset
+
+
+			Zoom Install
+yum install zoom-5.0.413237.0524-1.x86_64
+
+
+			VSCode (Visual Studio Code): How to Install
+
+sudo yum install /path/to/code.rpm
+code path/to/folder
+
+				pcoip status
+
+systemctl status pcoip -l
+sudo service pcoip status
+
+sudo service pcoip restart
+
+This is a warm boot so it will just restart the processes if all else fails to work
+
+		Showing a black screen
+
+This can happen due to resolution conflicts or it may need waking up. 
+First try hitting enter a couple of time (not too many as it can lock the account) to see if it wakes up.
+If not try flipping between full screen and windowed to get the resolution to refresh. 
+It is best that they launch PCoIP in windowed first, log in and then go full screen.
+
+sudo yum install pcoip-agent-graphics
+sudo yum remove pcoip-agent-graphics
+sudo systemctl restart graphical.target
+sudo systemctl restart pcoip
+sudo systemctl status pcoip
+pcoip-client -h
+
+				pcoip install
+
+sudo yum remove pcoip-agent-graphics.x86_64 -y
+sudo yum install pcoip-agent-graphics.x86_64 -y
+
+salt-highstate
+
+				temp Files Clear
+
+lsblk
+sudo find /user_data/.tmp/hfs*tmp -mtime +3 | xargs ls -hlatr
+sudo find /user_data/.tmp/hfs*tmp -mtime +3 | xargs du -shc
+sudo find /user_data/.tmp/hfs*tmp -mtime +2 | xargs ls -hlatr
+sudo find /user_data/.tmp/hfs*tmp -mtime +1 | xargs ls -hlatr/user
+find /user_data/.tmp/hfs*tmp -mtime +1 | xargs sudo rm -rf
+sudo find /user_data/.tmp/publish_temp_* -mtime +1 | xargs sudo rm -rf
+ncdu /user_data/
+find /user_data/.tmp/hfs*svg -mtime +1 | xargs ls -hlatr
+find /user_data/.tmp/hfs*svg -mtime +1 | xargs du -sch
+ls -hlatr /user_data/.tmp/hfs*tmp | less
+df -h /user_data/
+
+
+
+sudo systemctl restart pcoip
+sudo salt-call state.sls roles.nomachine-homework --state-verbose=False
+cd /etc/
+sudo rm -rvf pcoip-agent*
+cd /etc/pcoip-agent
+cd /usr/lib
+ls
+cd /var/lib/
+ll
+sudo rm -rvf pcoip-agent
+cd
+sudo salt-call state.sls roles.pcoip-homework --state-verbose=False (run 2 times)
+salt-highstate
+sudo systemctl status pcoip
+
+
+	Network Speed
+
+sudo ethtool eth0 | grep Speed
+
+	show Reels
+
+/jobs/SITE/EDITORIAL/ReDefine/HR_NEW_Joiners
+
+	rools
+
+sudo salt-call grains.item role
+
+	Nomachine/nxSERVER
+
+sudo /etc/NX/nxserver --restart
+sudo service nxserver restart
+sudo /usr/NX/scripts/setup/nxserver --install
+
+ssh nomachine
+pinky we are getting user details find long aged user
+ps -fu USER ID
+sudo kill -HUP PID
+
+	Showing a black screen
+
+alias pcoinstall "sudo yum install pcoip-agent-graphics"
+alias pcouninstall "sudo yum remove pcoip-agent-graphics"
+alias gt "sudo systemctl restart graphical.target"
+alias pcorestart "sudo systemctl restart pcoip"
+alias pcostatus "sudo systemctl status pcoip"
+alias pco "pcoip-client -h"
+
+	Restart nxd Service without Terminating Sessions
+
+ps -ef |grep "nxserver.bin --daemon"
+sudo kill -9 <pid>
+sudo /etc/NX/nxserver --status
+ps -ef |grep nxd
+
+
+	Turn on nxserver on startup
+sudo /etc/NX/nxserver --startup
+
+
+
+/tools/SITE/etc/bin/pcoip-free-workstations -d 16 -l -v
+
+
+	Password Change
+http://intranet.zro.dneg.com/password/change 
+http://intranet/password/change
+
+	G-Drive Access
+
+/tools/SITE/etc/google/newstarteraccess --add --user <USERNAME>
+/tools/SITE/etc/google/newstarteraccess --remove --user <USERNAME>
+
+
+	Creating the VPN Folder in thier google drive
+
+/tools/SITE/etc/bin/dnvpn2zimbra -u USER -s SERVER --client google
+Getting the VPN config from lonopenvpn2 for user simm
+Grabbing OSX config from lonopenvpn2
+Grabbing Windows config from lonopenvpn2
+Removing old /VPN folder for simm
+Creating /VPN folder for simm
+Adding OSX Config to /VPN folder for simm
+Adding Widnows Config to /VPN folder for simm
+Adding Docs to /VPN folder for simm
+finished
+
+	add dn channel in mari
+
+sudo cp -avi /apps/Linux64/python2.7/lib/python2.7/site-packages/cachetools /apps/Linux64/nuke/python2.7.3/lib/python2.7/site-packages/
+
+Solution 1:
+
+1- export 32 bits zDisp, R channel, mid value 0 out of ZB
+2- import UDIM into Nuke.
+3- copy R channel into G and B ones. You can do this using an expression nodes with R, G, B = R
+4- export zDisp out of Nuke. Will work properly when imported into Mari from now.
+
+Solution 2:
+1- export 32 bits zDisp, 3 channels, mid value 0 out of ZB
+2- done, should work like this.
+
+	User informatrion
+dnwho -v <username>

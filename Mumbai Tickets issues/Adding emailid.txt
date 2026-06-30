@@ -1,0 +1,6 @@
+sudo /tools/SITE/etc/google/groupsutil --user pspra@redefine.co --group rd-lighting-hyd@redefine.co
+sudo /tools/SITE/etc/google/groupsutil  --user meghr@redefine.co  --group wotere-unreal-ind@redefine.co  --remove
+
+
+sudo /tools/SITE/etc/google/groupsutil --user psun@dneg.com --group fx-mgrs-mum@dneg.com
+sudo /tools/SITE/etc/google/groupsutil  --user arpu@dneg.com  --group gpwrh-anim-mum@dneg.com  --remove

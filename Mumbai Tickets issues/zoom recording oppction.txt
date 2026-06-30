@@ -1,0 +1,18 @@
+Kindly answer the following standardized questions for recording permissions for Zoom.
+
+(1) What service needs to be enabled (in this case it's zoom recording)?
+(2) Why the service needs to be enabled?
+(3) Is the person requesting permissions using a DNEG Macbook or Mac Mini, if so, what number?
+--(NOTE: Recording is restricted to DNEG imaged Macbooks & Mac Mini's)
+(4) Who will be using the service?
+(5) What is the business justification or need for this to be enabled?
+
+Zoom DNET resource pages:
+
+http://dnet.dneg.com/display/IS/Zoom+Security+Governance
+http://dnet.dneg.com/display/TECH/Zoom
+http://dnet.dneg.com/pages/viewpage.action?pageId=484387361
+http://dnet.dneg.com/display/PIC/ZOOM?preview=%2F482002530%2F482002532%2FZoom-Instructions.pdf
+http://dnet.dneg.com/display/PROD/Zoom+-+Recording+Cinesync+and+Dailies+for+Production
+
+The response to these questions are taken as acknowledgement of the security policies in place when using Zoom recording.

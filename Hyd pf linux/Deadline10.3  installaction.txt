@@ -1,0 +1,52 @@
+Install Deadline 10.3 from \\hyd\tech\installers\thinkbox\10.3\DeadlineClient-10.3.0.10-windows-installer.exe
+Leave the default install location
+Select "Client"
+Select "Remote connection Type"
+Enter the server address "10.1.71.110:4433"
+Use the TLS certificate path "\\hyd\tech\apps\thinkbox\10.3\Deadline10\certs\Deadline10RemoteClient.pfx"
+Enter password (Password is shared in whatsapp)
+check Install Launcher as service checkbox.
+use "redefine\dna" for UserName
+Enter "dna" password.
+Finish the installation.
+
+
+Install Deadline 10.3 from 
+\hyd\tech\installers\thinkbox\10.3\DeadlineClient-10.3.0.10-windows-installer.exe
+Leave the default install location
+Select "Client"
+Select "Remote connection Type"
+Enter the server address "10.1.71.110:4433"
+Use the TLS certificate path "\\hyd\tech\apps\thinkbox\10.3\Deadline10\certs\Deadline10RemoteClient.pfx"
+Enter password (Password is shared in whatsapp)
+check Install Launcher as service checkbox.
+use "redefine\dna" for UserName
+Enter "dna" password.
+Finish the installation.
+
+redefine\dna user name and password Welc0me@4321
+certificate password: s3cr3tp@$$
+
+
+Install Deadline 10.3.2 from  \\hyd\tech\installers\thinkbox\10.3.2\DeadlineClient-10.3.2.1-windows-installer.exe
+    Leave the default install location
+    Select "Client"
+    Select "Remote connection Type"
+    Enter the server address " 10.1.64.94:4433 "
+    Use the TLS certificate path  "\\hyd\tech\apps\thinkbox\10.3.2 \Deadline10\certs\Deadline10RemoteClient.pfx"
+    Enter password (Certificate password: s3cr3tp@$$)
+    use "redefine\dna" for UserName
+    Enter "dna" password.
+    Finish the installation.
+dna username and password Welc0me@4321
+
+After Deadline 10.3.2 installation in the artist machines install nuke submitter tool 
+path : \\hyd\tech\apps\thinkbox\DeadlineRepository10\submission\Nuke\Installers
+
+
+
+
+For linux
+
+http://10.1.71.112:3000/en/home/pipeline/renderfarm/deadline-installation
+Certificate Password: Deadline10@99

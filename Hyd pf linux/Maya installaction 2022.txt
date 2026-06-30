@@ -1,0 +1,25 @@
+sudo yum install maya2022
+ cd /var/opt/
+ cd /jobs/TEMP/test
+ scp -r Autodesk2022_lic /var/opt
+ cd /var/opt/
+mv Autodesk Autodesk2016
+chmod -R 777 Autodesk2022_lic
+mv Autodesk2022_lic Autodesk
+
+
+
+mv Autodesk2016 Autodesk
+
+mv Autodesk Autodesk2022_lic 
+
+
+
+
+
+
+
+
+
+
+

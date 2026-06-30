@@ -1,0 +1,57 @@
+
+
+scp  -r /jobs/TEMP/centos_7.9/yum.repos.d/* /etc/yum.repos.d/
+
+cd /etc/yum.repos.d/
+
+mv cobbler-config.repo /
+
+scp -r /jobs/TEMP/centos_7.9/rpm-gpg/* /etc/pki/rpm-gpg/
+ 
+cd /etc/pki/rpm-gpg/
+
+puppet agent -t
+
+yum update -y --skip-broken --setopt=protected_multilib=false
+
+vi /etc/modprobe.d/blacklist-nouveau.conf
+blacklist nouveau
+options nouveau modeset=0
+
+grubby --update-kernel=ALL --args="rd.driver.blacklist=nouveau nouveau.modeset=0"      
+ln -sf /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/libGL.so.1
+yum -y install dkms   (2 times)
+cd /usr/lib64/
+ls -ll
+yum -y install freeglut-devel libX11-devel libXi-devel libXmu-devel  make mesa-libGLU-devel freeimage-devel kernel-devel epel-release dkms kernel source libglvnd development                                                                                                       
+yum remove nvidia-x11-drv-384.111-1.el7.elrepo.x86_64
+y
+yum install binutils-x86_64-linux-gnu
+reboot
+
+cd /jobs/TEMP/test/
+init 3
+./NVIDIA-Linux-x86_64-430.14.run
+
+reboot
+yum -y groups install "GNOME Desktop"
+ls
+reboot
+vi /etc/resolv.conf
+
+domain redefine.co
+search redefine.co.
+nameserver 10.1.64.5
+
+mount -a
+df -h to check whether hyd storage is mounted
+
+systemctl stop NetworkManager
+systemctl disable NetworkManager
+
+cat /etc/redhat-release
+CentOS Linux release 7.9.2009 (Core)
+
+after that through nomachine check 
+
+

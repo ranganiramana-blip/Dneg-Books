@@ -1,0 +1,85 @@
+df -h /user_data
+sudo find /user_daa
+
+sudo yum install pidgin                                                                                   Procuss ps -ux, ps -aux and htop/
+sudo yum remove pidgin                                                                                    
+
+sudo systemctl status pcoip -l
+df -h /user_data/
+sudo ncdu /user_data/
+sudo find /user_data/.tmp/publish_temp_* -mtime +2 | xargs ls -hlatr
+sudo find /user_data/.tmp/publish_temp_* -mtime +2 | xargs sudo rm -rf
+df -h /user_data/
+
+EX: sudo rm -rvf /user_data/.tmp/MoTemp/P9009199a6b2240d6a574050d92719371C9S0F80
+
+sudo rm -rvf /user_data/.tmp/*.tmp
+sudo rm -rvf /user_data//mari_archive/
+sudo rm -rvf /user_data/.tmp/publish_temp*
+sudo rm -rvf /user_data/.tmp/environment_*
+sudo rm -rvf /user_data/.tmp/tasklauncher_temp_*
+sudo rm -rvf /user_data/.tmp/tmp*
+sudo rm -rvf /user_data/.tmp/ogs*
+sudo rm -rvf /user_data/.tmp/Nuke/ViewerCache
+sudo rm -rvf /user_data/.tmp/Nuke/tilecache
+sudo rm -rvf /user_data/.tmp/clip/cache/*
+sudo rm -rvf /user_data/.tmp/hfs*
+sudo rm -rvf /user_data/.tmp/MoTemp*
+
+sudo rm -rvf /user_data//.Trash*
+
+sudo find /user_data/.tmp/.Trash*
+
+sudo rm -rvf /user_data/mari_archive/
+sudo rm -rvf /user_data/mari_archive/
+
+sudo rm -rvf /user_data/.tmp/houdini/hip 
+
+
+
+sudo service hserver stop    Houdini issue
+sudo service hserver status
+sudo service hserver restart
+
+sudo systemctl restart pcoip
+sudo systemctl status pcoip
+sudo rm -rf /var/lib/pcoip-agent/licensing/5/*
+sudo systemctl restart pcoip
+sudo systemctl status pcoip
+
+1. sudo yum remove pcoip-agent-graphics.x86_64 -y
+2. sudo yum install pcoip-agent-graphics.x86_64 -y
+
+sudo nvidia-driver --auto
+sudo yum remove -y nvidia-x11-drv  after removing drivers use below cmd
+sudo nvidia-driver --ver 580.82.07
+sudo yum install -y nvidia-x11-drv-460.91.03-1.dneg.x86_64
+
+salt-highstate
+sudo salt-call state.sls roles.pcoip-homework --state-verbose=False
+
+/jobs/ARPRE/REF/hyderabad/users/Dailies/comp/PILOT/2001_status
+mgaf
+
+
+cd /usr/tmp
+pwd
+du -sh
+rm -rvf *
+
+cd /tmp
+pwd
+du -sh
+
+memary cache clear:  sudo sysctl vm.drop_caches=3
+
+
+cd /jobs/TEMP/test/
+rpm -ivh shotgrid_desktop-current-1.x86_64.rpm
+
+
+
+
+
+
+

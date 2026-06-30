@@ -1,0 +1,4 @@
+sudo mv Ravi /u/skaki/Desktop
+vrra@mumws2421 /u/yara cd /u/yara/Downloads/
+/u/yara/Downloads/: Permission denied.
+

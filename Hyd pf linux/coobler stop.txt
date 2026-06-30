@@ -1,0 +1,11 @@
+
+  986  service dhcpd status
+  987  service dhcpd stop
+  988  service dhcpd status
+  989  history
+  990  cat /etc/dhcp/dhcpd.conf
+  991  /etc/init.d/dhcpd stop
+  992  /etc/init.d/dhcpd start
+  993  /etc/init.d/dhcpd status
+  994  history
+[root@cobbler1 ~]#

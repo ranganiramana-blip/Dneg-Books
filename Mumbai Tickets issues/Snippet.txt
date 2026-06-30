@@ -1,0 +1,21 @@
+Check the snippet folder into the user home directory 
+
+
+Step :
+
+1.  sudo rm -rvf /u/<username>/.snippet
+2.  sudo ln -s /hosts/<systemname>/user_data/.snippet /u/<username>/.snippet
+3.  mkdir -p /hosts/<systemname>/user_data/.snippet
+4.  sudo chown -R <userID>:user /u/<username>/.snippet
+
+-cross check by checking the output of 'ls -l /u/<username>/.snippet'
+===============================================================================
+For Example
+1. remove old .snippet -> sudo rm -rvf /u/vgh/.snippet
+
+2. create a symmlink -> sudo ln -s /hosts/mumws222/user_data/.snippet /u/vgh/.snippet
+
+3. create folder pointing to symmlink -> mkdir -p /hosts/mumws222/user_data/.snippet
+
+4. change permissions -> sudo chown -R vgh:user /u/vgh/.snippet
+cross check by checking the output of ls -l /u/vgh/.snippet

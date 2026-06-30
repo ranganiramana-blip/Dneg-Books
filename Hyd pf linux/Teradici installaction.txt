@@ -1,0 +1,61 @@
+Teradici install cmd's: (For office only Linux systems)
+
+curl -1sLf https://dl.teradici.com/xHfmOLEc9bWcllgT/pcoip-agent/cfg/setup/bash.rpm.sh | sudo -E distro=el codename=7 bash
+
+yum install pcoip-agent-graphics
+
+pcoip-register-host --registration-code=1QFLJUDDWXPJ@CD59-63B5-F8DA-A655
+pcoip-register-host --registration-code=L7ZFP33VKWE1@3DD5-B020-ED8C-FEDA
+pcoip-register-host --registration-code=L7ZFP33VKWE1@DA99-85C3-386F-3573
+                                        
+
+Need to run this cmds for matte desktop...
+
+cd /usr/share/xsessions/
+ll
+mv gnome-classic.desktop t_gnome-classic.desktop
+mv gnome.desktop t_gnome.desktop
+ll
+
+
+(to share with users)
+User Note: 
+===========
+
+step 1 - - open teradici
+
+step 2 - - enter your HOST IP & any name
+
+step 3 - - click connect insecurely
+
+step 3 - - enter your username & Password
+
+step 4 - - all done - continue work...
+
+
+PCoIP Software Client Installation steps:
+
+Step 1 - Go to  https://docs.teradici.com/find/product/software-and-mobile-clients/2022.04/software-client-for-windows
+Once downloaded, install the application ( Enable add a shortcut to desktop before clicking finish)
+Launch the application and enter the following:
+
+Step 2 - Host Address or Code: <Your Workstation Hostname> (e.g. "10.1.69.0") Name: <hyd>
+
+Step 3 - When asked Choose "Connect Insecurely"
+
+Step 4 - Enter your redefine username & password to connect
+The "Connection Name" text entry can be used to give the connection a name that you can click on next time (e.g. the remote
+hostname perhaps). Or you can leave it blank to not save the connection for next time.
+
+
+Kindly go through the Pcoip it will be working fine if you have any query please let me know
+
+Open the google chrome browser mentioned URL Past 
+
+https://docs.teradici.com/find/product/software-and-mobile-clients/2022.04/software-client-for-windows/22.04
+
+Once downloaded, install the application 
+
+Launch the application and enter the following Host id Like 10.1.69.XX
+
+choose Connect insecurely ____ Enter  User ID and Password ___Enter 
